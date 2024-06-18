@@ -3,9 +3,9 @@ import styled,{keyframes} from "styled-components";
 import { FaGraduationCap } from "react-icons/fa6";
 import { IoMdPerson } from "react-icons/io";
 import { IoColorPalette } from "react-icons/io5";
-// import hobi from "../../images/hobbie.png";
-// import KTpolos from "../../images/ktppolos.jpg"
-// import foto from "../../images/foto.jpg"
+import hobi from "../../assets/images/hobbie.png";
+import KTpolos from "../../assets/images/ktppolos.jpg"
+import foto from "../../assets/images/foto.jpg"
 import Minat from "../carousel/Minat";
 import { LuBrain } from "react-icons/lu";
 
@@ -37,7 +37,7 @@ const Resume = () => {
             <FaGraduationCap />
             {/* <IoColorPalette /> */}
             <LuBrain/>
-            <img src={"/images/hobbie.png"} alt="" width={"45px"} height={"30px"} />
+            <img src={`${hobi}`} alt="" width={"45px"} height={"30px"} />
           </Icon>
           <Sidebar>
             <SidebarItem
@@ -79,7 +79,7 @@ const Resume = () => {
           <PersonContainer>
             <h3>Profile Pribadi</h3>
             <Banner
-            backgroundImage={"/images/ktppolos.jpg"}
+            backgroundImage={`${KTpolos}`}
             >
               <h3
               style={{
@@ -283,7 +283,7 @@ const Resume = () => {
                 justifyContent:"flex-end"
               }}
               >
-                <img src={"/images/foto.jpg"} alt="" 
+                <img src={`${foto}`} alt="" 
                 style={{
                   width:"100px"
                 }}

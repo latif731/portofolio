@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-// import google from "../../images/google.png";
-// import chatgpt from "../../images/chatgpt.png";
-// import youtube from "../../images/Youtube_logo.png";
-// import stackoverflow from "../../images/stackoverflow.png";
-// import githubforum from "../../images/githubforum.png";
-// import codepen from "../../images/codepen.png";
-// import codesanbox from "../../images/codesandbox.png";
-// import mdn from "../../images/mdn.png";
-// import wschool from "../../images/w3school.png";
-// import medium from "../../images/medium.png";
-// import freecodecamp from "../../images/freecodecamp.png";
+import google from "../../assets/images/google.png";
+import chatgpt from "../../assets/images/chatgpt.png";
+import youtube from "../../assets/images/Youtube_logo.png";
+import stackoverflow from "../../assets/images/stackoverflow.png";
+import githubforum from "../../assets/images/githubforum.png";
+import codepen from "../../assets/images/codepen.png";
+import codesanbox from "../../assets/images/codesandbox.png";
+import mdn from "../../assets/images/mdn.png";
+import wschool from "../../assets/images/w3school.png";
+import medium from "../../assets/images/medium.png";
+import freecodecamp from "../../assets/images/freecodecamp.png";
 
 const MyPartner = () => {
   return (
@@ -28,8 +28,8 @@ const MyPartner = () => {
    
           <div>
             <img
-              // src={medium}
-              src="/images/medium.png"
+              src={medium}
+              // src="/images/medium.png"
               alt=""
               style={{
                 width: "250px",
@@ -38,8 +38,8 @@ const MyPartner = () => {
           </div>
           <div>
             <img
-              // src={wschool}
-              src="/images/w3school.png"
+              src={wschool}
+              // src="/images/w3school.png"
               alt=""
               style={{
                 width: "250px",
@@ -55,8 +55,8 @@ const MyPartner = () => {
             }}
           >
             <img
-              // src={mdn}
-              src="/images/mdn.png"
+              src={mdn}
+              // src="/images/mdn.png"
               alt=""
               style={{
                 width: "250px",
@@ -65,8 +65,8 @@ const MyPartner = () => {
           </div>
           <div>
             <img
-              // src={stackoverflow}
-              src="/images/stackoverflow.png"
+              src={stackoverflow}
+              // src="/images/stackoverflow.png"
               alt=""
               style={{
                 width: "250px",
@@ -75,8 +75,8 @@ const MyPartner = () => {
           </div>
           <div>
             <img
-              // src={codesanbox}
-              src="/images/codesandbox.png"
+              src={codesanbox}
+              // src="/images/codesandbox.png"
               alt=""
               style={{
                 width: "250px",
@@ -86,8 +86,8 @@ const MyPartner = () => {
         </div>
         <div>
           <img
-            // src={google}
-            src="/images/google.png"
+            src={google}
+            // src="/images/google.png"
             alt=""
             style={{
               width: "350px",
@@ -97,8 +97,8 @@ const MyPartner = () => {
         <div>
         <div>
             <img
-              // src={githubforum}
-              src="/images/githubforum.png"
+              src={githubforum}
+              // src="/images/githubforum.png"
               alt=""
               style={{
                 width: "250px",
@@ -107,8 +107,8 @@ const MyPartner = () => {
           </div>
           <div>
             <img
-              // src={freecodecamp}
-              src="/images/freecodecamp.png"
+              src={freecodecamp}
+              // src="/images/freecodecamp.png"
               alt=""
               style={{
                 width: "250px",
@@ -117,8 +117,8 @@ const MyPartner = () => {
           </div>
           <div>
             <img
-              // src={chatgpt}
-              src="/images/chatgpt.png"
+              src={chatgpt}
+              // src="/images/chatgpt.png"
               alt=""
               style={{
                 width: "250px",
@@ -130,8 +130,8 @@ const MyPartner = () => {
         >
           <div>
             <img
-              // src={youtube}
-              src="/images/Youtube_logo.png"
+              src={youtube}
+              // src="/images/Youtube_logo.png"
               alt=""
               style={{
                 width: "250px",
@@ -141,8 +141,8 @@ const MyPartner = () => {
  
           <div>
             <img
-              // src={codepen}
-              src="/images/codepen.png"
+              src={codepen}
+              // src="/images/codepen.png"
               alt=""
               style={{
                 width: "250px",

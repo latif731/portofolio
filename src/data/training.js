@@ -1,6 +1,6 @@
-// import foo from "../../src/images/foo.jpg"
-// import glints from "../../src/images/glints.jpg"
-// import aclasindo from "../../src/images/welder.jpeg"
+import foo from "../../src/assets/images/foo.jpg"
+import glints from "../../src/assets/images/glints.jpg"
+import aclasindo from "../../src/assets/images/welder.jpeg"
 
 export const trainings = [
     {
@@ -13,8 +13,8 @@ saya mengikuti training atau pelatihan penerbangan di mulai
  3 bulan kelas teori, 3 bulan kelas simulasi, dan 3 bulan
  on job training di PT Sriwijaya Airline.  
       `,
-      // img: foo,
-      img: "/images/foo.jpg",
+      img: foo,
+      // img: "/images/foo.jpg",
     },
     {
       title: 'Glints Academy Bootcamp',
@@ -32,8 +32,8 @@ lanjut ke mini project membuat web movie dan bulan terakhir
 full mengerjakan web atau aplikasi final project yaitu wedspot
 dan proses pengerjaan semuanya secara tim dan berdasarkan design UI/UX.  
       `,
-      // img: glints,
-      img: "/images/glints.jpg",
+      img: glints,
+      // img: "/images/glints.jpg",
     },
     {
       title: 'BLK Mojokerto',
@@ -49,7 +49,7 @@ proses kampuh atau tembusan adalah DCEN (Direct Current Electrode Negative)
 sedangkan polaritas yang digunakan untuk filler dan caping 
 adalah DCEP (Direct Current Electrode Positive).
       `,
-      // img: aclasindo,
-      img: "/images/welder.jpeg",
+      img: aclasindo,
+      // img: "/images/welder.jpeg",
     },
   ];

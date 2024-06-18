@@ -1,30 +1,31 @@
-// import client from "../../src/images/wedspotclient.png"
-// import vendor from "../../src/images/wedspotvendor.png"
-// import figma1 from "../../src/images/wedspotfigma.png"
-// import figma2 from "../../src/images/musiconfigma.png"
-// import react from "../../src/images/reactjs.png"
-// import bootstrap from "../../src/images/reactbootstrap.png"
-// import axios from "../../src/images/axios.jpg"
-// import imagegalery from "../../src/images/reactimagegalery.png"
-// import toastify from "../../src/images/reacttoastify.png"
-// import reactrouter from "../../src/images/reactrouter.png"
-// import sass from "../../src/images/sass.png"
-// import slick from "../../src/images/slick.png"
-// import css from "../../src/images/css.png"
-// import vercel from "../../src/images/vercel.png"
-// import materialui from "../../src/images/materialui.png"
-// import git from "../../src/images/git.png"
-// import reacticons from "../../src/images/reacticons.png"
-// import npm from "../../src/images/npm.png"
-// import redux from "../../src/images/redux.png"
+import client from "../../src/assets/images/wedspotclient.png"
+import vendor from "../../src/assets/images/wedspotvendor.png"
+import figma1 from "../../src/assets/images/wedspotfigma.png"
+import figma2 from "../../src/assets/images/musiconfigma.png"
+import react from "../../src/assets/images/reactjs.png"
+import bootstrap from "../../src/assets/images/reactbootstrap.png"
+import axios from "../../src/assets/images/axios.jpg"
+import imagegalery from "../../src/assets/images/reactimagegalery.png"
+import toastify from "../../src/assets/images/reacttoastify.png"
+import reactrouter from "../../src/assets/images/reactrouter.png"
+import sass from "../../src/assets/images/sass.png"
+import slick from "../../src/assets/images/slick.png"
+import css from "../../src/assets/images/css.png"
+import vercel from "../../src/assets/images/vercel.png"
+import materialui from "../../src/assets/images/materialui.png"
+import git from "../../src/assets/images/git.png"
+import reacticons from "../../src/assets/images/reacticons.png"
+import npm from "../../src/assets/images/npm.png"
+import redux from "../../src/assets/images/redux.png"
+import moment from "../../src/assets/images/momentjs.png"
 
 
 
 export const PortfolioDatas = [
     {
     id:"1",
-    // img:`${client}`,
-    img:`/images/wedspotclient.png`,
+    img:`${client}`,
+    // img:`/images/wedspotclient.png`,
     title:"Wedspot Client",
     type:"website",
     video:"",
@@ -86,76 +87,76 @@ export const PortfolioDatas = [
   note: (halaman profile dapat di akses jika user sudah login)`,
     tools:[
         {
-            // item:`${react}`
-            item:`/images/reactjs.png`
+            item:`${react}`
+            // item:`/images/reactjs.png`
         },
         {
-            // item:`${bootstrap}`
-            item:`/images/reactbootstrap.png`
+            item:`${bootstrap}`
+            // item:`/images/reactbootstrap.png`
         },
         {
-            // item:`${axios}`,
-            item:`/images/axios.jpg`
+            item:`${axios}`,
+            // item:`/images/axios.jpg`
         },
         {
-            // item:`${imagegalery}`
-            item:`/images/reactimagegalery.png`
+            item:`${imagegalery}`
+            // item:`/images/reactimagegalery.png`
         },
         {
-            // item:`${toastify}`
-            item:`/images/reacttoastify.png`
+            item:`${toastify}`
+            // item:`/images/reacttoastify.png`
         },
         {
-            // item:`${reactrouter}`
-            item:`/images/reactrouter.png`
+            item:`${reactrouter}`
+            // item:`/images/reactrouter.png`
         },
         {
-            // item:`${sass}`
-            item:`/images/sass.png`
+            item:`${sass}`
+            // item:`/images/sass.png`
         },
         {
-            // item:`${slick}`
-            item:`/images/slick.png`
+            item:`${slick}`
+            // item:`/images/slick.png`
         },
         {
-            // item:`${css}`
-            item:`/images/css.png`
+            item:`${css}`
+            // item:`/images/css.png`
         },
         {
-            // item:`${vercel}`
-            item:`/images/vercel.png`
+            item:`${vercel}`
+            // item:`/images/vercel.png`
         },
         {
-            // item:`${materialui}`
-            item:`/images/materialui.png`
+            item:`${materialui}`
+            // item:`/images/materialui.png`
         },
         {
-            // item:`${git}`
-            item:`/images/git.png`
+            item:`${git}`
+            // item:`/images/git.png`
         },
         {
-            // item:`${npm}`
-            item:`/images/npm.png`
+            item:`${npm}`
+            // item:`/images/npm.png`
         },
         {
-            // item:`${reacticons}`
-            item:`/images/reacticons.png`
+            item:`${reacticons}`
+            // item:`/images/reacticons.png`
         },
         {
-            // item:`${redux}`
-            item:`/images/redux.png`
+            item:`${redux}`
+            // item:`/images/redux.png`
         },
         {
-            // item:`${redux}`
-            item:`/images/momentjs.png`
+            item:`${moment}`
+            // item:`/images/momentjs.png`
         },
     ],
     link:"https://wedspot.vercel.app/"
     },
     {
     id:"2",
-    // img:`${vendor}`,
-    img:`/images/wedspotvendor.png`,
+    img:`${vendor}`,
+    // img:`/images/wedspotvendor.png`,
     title:"Wedspot Vendor",
     type:"website",
     desc:"wedspot vendor adalah aplikasi yang dapat membantu pengguna untuk lebih mudah memasarkan jasa wo dan perencanaan pernikahan ( wedding planner ) atau venue dengan jaringan yang lebih luas.",
@@ -200,64 +201,64 @@ export const PortfolioDatas = [
 
     `,
     tools:[        {
-        // item:`${react}`
-        item:`/images/reactjs.png`
+        item:`${react}`
+        // item:`/images/reactjs.png`
     },
     {
-        // item:`${reacticons}`
-        item:`/images/reacticons.png`
+        item:`${reacticons}`
+        // item:`/images/reacticons.png`
     },
     {
-        // item:`${axios}`
-        item:`/images/axios.jpg`
+        item:`${axios}`
+        // item:`/images/axios.jpg`
     },
     {
-        // item:`${imagegalery}`
-        item:`/images/reactimagegalery.png`
+        item:`${imagegalery}`
+        // item:`/images/reactimagegalery.png`
     },
     {
-        // item:`${toastify}`
-        item:`/images/reacttoastify.png`
+        item:`${toastify}`
+        // item:`/images/reacttoastify.png`
     },
     {
-        // item:`${reactrouter}`
-        item:`/images/reactrouter.png`
+        item:`${reactrouter}`
+        // item:`/images/reactrouter.png`
     },
     {
-        // item:`${sass}`
-        item:`/images/sass.png`
+        item:`${sass}`
+        // item:`/images/sass.png`
     },
     {
-        // item:`${slick}`
-        item:`/images/slick.png`
+        item:`${slick}`
+        // item:`/images/slick.png`
     },
     {
-        item:`/images/css.png`
-        // item:`${css}`
+        // item:`/images/css.png`
+        item:`${css}`
     },
     {
-        // item:`${vercel}`
-        item:`/images/vercel.png`
+        item:`${vercel}`
+        // item:`/images/vercel.png`
     },
     {
-        // item:`${materialui}`
-        item:`/images/materialui.png`
+        item:`${materialui}`
+        // item:`/images/materialui.png`
     },
     {
-        // item:`${npm}`
-        item:`/images/npm.png`
+        item:`${npm}`
+        // item:`/images/npm.png`
     },
     {
-        // item:`${git}`
-        item:`/images/git.png`
+        item:`${git}`
+        // item:`/images/git.png`
     },
     {
-        // item:`${redux}`
-        item:`/images/redux.png`
+        item:`${redux}`
+        // item:`/images/redux.png`
     },
     {
-        // item:`${redux}`
-        item:`/images/momentjs.png`
+        item:`${moment}`
+        // item:`/images/momentjs.png`
     },
 
 ],

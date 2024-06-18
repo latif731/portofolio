@@ -1,31 +1,44 @@
-// import catering from "../../src/videos/catering.mp4";
+import catering from "../../src/assets/videos/catering.mp4";
+// import catering from "../../src/assets/videos/";
 // import foo from "../../src/videos/foo.mp4";
+import foo from "../../src/assets/videos/foo.mp4";
+import grab from "../../src/assets/videos/grab.mp4";
 // import grab from "../../src/videos/grab.mp4";
+import idexpress from "../../src/assets/videos/idexpress.mp4";
 // import idexpress from "../../src/videos/idexpress.mp4";
+import shopee from "../../src/assets/videos/shopee.mp4";
 // import shopee from "../../src/videos/shopee.mp4";
+import cateringService from "../../src/assets/images/cateringService.jpg";
 // import cateringService from "../../src/images/cateringService.jpg";
+import foogambar from "../../src/assets/images/sriwijaya.png";
 // import foogambar from "../../src/images/sriwijaya.png";
+import grabgambar from "../../src/assets/images/grab.jpg";
 // import grabgambar from "../../src/images/grab.jpg";
+import idgambar from "../../src/assets/images/idexpress.png";
 // import idgambar from "../../src/images/idexpress.png";
+import shopeegambar from "../../src/assets/images/shopeegambar.jpg";
 // import shopeegambar from "../../src/images/shopeegambar.jpg";
+import ojt from "../../src/assets/images/ojt.png"
 // import ojt from "../../src/images/ojt.png"
+import lion from "../../src/assets/images/lion-1.png"
 // import lion from "../../src/images/lion-1.png"
+import grabakun from "../../src/assets/images/grabaccount.jpg"
 // import grabakun from "../../src/images/grabaccount.jpg"
 
 export const PengalamanKerja = [
     {
       id: 1,
-      // video: `${catering}`,
-      video: `/videos/catering.mp4`,
-      // thumbnail: `${cateringService}`,
-      thumbnail: `/images/cateringService.jpg`,
+      video: `${catering}`,
+      // video: `/videos/catering.mp4`,
+      thumbnail: `${cateringService}`,
+      // thumbnail: `/images/cateringService.jpg`,
       title: "Catering",
       type: "Lion Boga",
       posisi:"catering service",
       perusahaan:"PT Angkasa Aviasi Servis",
       durasi:"januari 2015 - januari 2018",
-      // img:`${lion}`,
-      img:`/images/lion-1.png`,
+      img:`${lion}`,
+      // img:`/images/lion-1.png`,
       description: `
 - sebagai petugas catering service di maskapai hal pertama 
   yang saya lakukan adalah memeriksa jadwal penerbangan 
@@ -60,16 +73,17 @@ export const PengalamanKerja = [
     },
     {
       id: 2,
-      // video: `${foo}`,
-      video: `/videos/foo.mp4`,
-      thumbnail: `/images/sriwijaya.png`,
+      video: `${foo}`,
+      // video: `/videos/foo.mp4`,
+      thumbnail: `${foogambar}`,
+      // thumbnail: `/images/sriwijaya.png`,
       title: "On The Job Training FOO",
       type: "Sriwijaya Air",
       posisi:"siswa MTC magang Fligh Operation Officer",
       perusahaan:"PT Sriwijaya Air",
       durasi:"september 2019 - januari 2020",
-      // img:`${ojt}`,
-      img:`/images/ojt.png`,
+      img:`${ojt}`,
+      // img:`/images/ojt.png`,
       description: `
 - sebagai siswa Flight Operation Oficer (FOO) yang melaksanakan 
   OJT atau magang di perusahaan sriwijaya, saya diwajibkan
@@ -101,15 +115,16 @@ export const PengalamanKerja = [
     },
     {
       id: 3,
-      // video: `${grab}`,
-      video: `/videos/grab.mp4`,
-      thumbnail: `/images/grab.jpg`,
+      video: `${grab}`,
+      // video: `/videos/grab.mp4`,
+      thumbnail: `${grabgambar}`,
+      // thumbnail: `/images/grab.jpg`,
       title: "Grab",
       type: "Ojek Online",
       posisi: `Driver Ojek Online`,
       perusahaan: `PT Grab Indonesia`,
-      // img:`${grabakun}`,
-      img:`/images/grabaccount.jpg`,
+      img:`${grabakun}`,
+      // img:`/images/grabaccount.jpg`,
       durasi:"agustus 2018 - januari 2021",
       description: `
  - saya mendaftar di grab sebagai driver ojek online mulai 
@@ -123,10 +138,10 @@ export const PengalamanKerja = [
     },
     {
       id: 4,
-      // video: `${idexpress}`,
-      video: `/videos/idexpress.mp4`,
-      // thumbnail: `${idgambar}`,
-      thumbnail: `/images/idexpress.png`,
+      video: `${idexpress}`,
+      // video: `/videos/idexpress.mp4`,
+      thumbnail: `${idgambar}`,
+      // thumbnail: `/images/idexpress.png`,
       title: "ID Express",
       type: "Kurir",
       perusahaan:"PT ID Express Logistik Indonesia",
@@ -146,10 +161,10 @@ export const PengalamanKerja = [
     },
     {
       id: 5,
-      // video: `${shopee}`,
-      video: `/videos/shopee.mp4`,
-      // thumbnail: `${shopeegambar}`,
-      thumbnail: `/images/shopeegambar.jpg`,
+      video: `${shopee}`,
+      // video: `/videos/shopee.mp4`,
+      thumbnail: `${shopeegambar}`,
+      // thumbnail: `/images/shopeegambar.jpg`,
       title: "Shopee Express",
       type: "Kurir",
       posisi:"Kurir Mitra",

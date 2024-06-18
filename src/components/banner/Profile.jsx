@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { TiSocialInstagram } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TiSocialGithub } from "react-icons/ti";
+import foto from "../../assets/images/foto.jpg"
 
 const Profile = () => {
   return (
@@ -58,7 +59,7 @@ const Profile = () => {
             </Social>
         </Texts>
         <ProfileContent>
-            <img src={"/images/foto.jpg"} alt="" />
+            <img src={`${foto}`} alt="" />
         </ProfileContent>
     </Container>
   )
