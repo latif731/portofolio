@@ -1,4 +1,9 @@
 import React from 'react'
+import BelajarHalBaru from "../../assets/videos/belajarhalbaru.mp4"
+import futsal from "../../assets/videos/futsal.mp4"
+import coding from "../../assets/videos/coding.mp4"
+import game from "../../assets/videos/game.mp4"
+import musik from "../../assets/videos/musik.mp4"
 
 
 const Minat = () => {
@@ -24,7 +29,7 @@ const Minat = () => {
         >
                   {/* <video src={videoObj.url} loop muted id="autoplay"/> */}
                   <video width="400" controls autoPlay={true} muted playsInline loop={true}>
-                <source src={"/videos/futsal.mp4"} type="video/mp4"/>
+                <source src={`${futsal}`} type="video/mp4"/>
                 {/* <source src="mov_bbb.ogg" type="video/ogg"/>             */}
                   </video>
                   <h1
@@ -46,7 +51,7 @@ const Minat = () => {
         >
                   {/* <video src={videoObj.url} loop muted id="autoplay"/> */}
                   <video width="400" controls autoPlay={true} muted playsInline loop={true}>
-                <source src={"/videos/game.mp4"} type="video/mp4"/>
+                <source src={`${game}`} type="video/mp4"/>
                 {/* <source src="mov_bbb.ogg" type="video/ogg"/>             */}
                   </video>
 
@@ -74,7 +79,7 @@ const Minat = () => {
         }}
         >
             <video width="400" controls autoPlay={true} muted playsInline loop={true}>
-          <source src={"/videos/musik.mp4"} type="video/mp4"/>
+          <source src={`${musik}`} type="video/mp4"/>
           {/* <source src="mov_bbb.ogg" type="video/ogg"/>             */}
             </video>
             <h1
@@ -94,7 +99,7 @@ const Minat = () => {
         }}
         >                
                   <video width="400" controls autoPlay={true} muted playsInline loop={true}>
-                <source src={"/videos/belajarhalbaru.mp4"} type="video/mp4"/>
+                <source src={`${BelajarHalBaru}`} type="video/mp4"/>
                 {/* <source src="mov_bbb.ogg" type="video/ogg"/>             */}
                   </video>
                   <h1
@@ -123,7 +128,7 @@ const Minat = () => {
         >
                   {/* <video src={videoObj.url} loop muted id="autoplay"/> */}
                   <video width="400" controls autoPlay={true} muted playsInline loop={true}>
-                <source src={"/videos/coding.mp4"} type="video/mp4"/>
+                <source src={`${coding}`} type="video/mp4"/>
                 {/* <source src="mov_bbb.ogg" type="video/ogg"/>             */}
                   </video>
                   {/* <video src={videoObj.url} loop muted id="autoplay"/> */}
