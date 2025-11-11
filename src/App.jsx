@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Resume from "./components/education/Resume";
 import Pengalaman from "./components/pengalaman/Pengalaman";
 import Minat from "./components/carousel/Minat";
-import Test from "./components/carousel/Test";
 import Programmer from "./components/Programmer/Programmer";
 import Circular from "./components/circular/Circular";
 import SkillCard from "./components/card/SkillCard";

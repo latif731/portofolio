@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import styled, { keyframes, css } from "styled-components";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-
+import { useTranslation } from "react-i18next";
 // Import data and media
 import DetailPengalaman from "./DetailPengalaman";
 import { PengalamanKerja } from "../../data/pengalaman";
-
+import i18n from "../../i18n";
 // Define the structured data
 
 
 const Pengalaman = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [detail, setDetail] = useState(false)
+  const { t,i18n } = useTranslation();
+  const data  = PengalamanKerja()
   const [selectedDetail, setSelectedDetail] = useState(null)
   console.log("selectedDetail", selectedDetail)
   const openDetail = (e) => {
@@ -19,11 +21,11 @@ const Pengalaman = () => {
     setDetail(true)
   }
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % PengalamanKerja.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
 
   const handleOpenPengalaman = (id) => {
-    const detail = PengalamanKerja.find(pengalaman => pengalaman.id === id)
+    const detail = data.find(pengalaman => pengalaman.id === id)
     setSelectedDetail(detail)
     setDetail(true)
 
@@ -31,22 +33,23 @@ const Pengalaman = () => {
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + PengalamanKerja.length) % PengalamanKerja.length
+      (prevIndex) => (prevIndex - 1 + data.length) % data.length
     );
   };
 
   const getThumbnailSrc = (index) => {
-    return PengalamanKerja[(currentIndex + index) % PengalamanKerja.length].thumbnail;
+    return data[(currentIndex + index) % data.length].thumbnail;
   };
 
   return (
     <Container id="pengalaman">
       <Title>
-        <h1>Pengalaman Kerja</h1>
+        {/* <h1>Pengalaman Kerja</h1> */}
+        <h1>{t("Pengalaman Kerja.title")}</h1>
       </Title>
       <Slider>
         <List>
-          {PengalamanKerja.map((item, index) => (
+          {data.map((item, index) => (
             <VideoItem key={item.id} className={index === currentIndex ? "active" : ""}>
               <VideoWrapper className={index === currentIndex ? "active" : ""}>
                 <video controls autoPlay muted playsInline loop className="video">
@@ -57,21 +60,24 @@ const Pengalaman = () => {
               <Content className={index === currentIndex ? "active" : ""}>
                 <TitleContent className={index === currentIndex ? "active" : ""}>
                   {item.title}
+                  {/* {t("Pengalaman Kerja.catering")} */}
                 </TitleContent>
                 <Type className={index === currentIndex ? "active" : ""}>
                   {item.type}
+                  {/* {t("Pengalaman Kerja.type1")} */}
                 </Type>
                 <button className={index === currentIndex ? "active" : ""}
                 onClick={() => handleOpenPengalaman(item.id)}
                 >
-                  See Detail
+                  {/* See Detail */}
+                  {t("Pengalaman Kerja.detail")}
                 </button>
               </Content>
             </VideoItem>
           ))}
         </List>
         <ThumbnailsContainer>
-          {PengalamanKerja.map((_, index) => (
+          {data.map((_, index) => (
             <Thumbnail
               key={index}
               hidden={index === 0}
@@ -94,6 +100,7 @@ const Pengalaman = () => {
           <DetailPengalaman
           setOpenDetail={setDetail}
           detail={selectedDetail}
+          t={t}
           />
         )
       }

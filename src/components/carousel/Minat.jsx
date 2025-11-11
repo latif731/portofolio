@@ -6,7 +6,7 @@ import game from "../../assets/videos/game.mp4"
 import musik from "../../assets/videos/musik.mp4"
 
 
-const Minat = () => {
+const Minat = ({t,i18n}) => {
   return (
     <div
     style={{
@@ -41,7 +41,7 @@ const Minat = () => {
               backgroundColor: "rgba(0, 0, 0, 0.5)",
               padding: "5px"
             }}
-            >Futsal</h1>
+            >{t("tertarik.futsal")}</h1>
           
         </div>
         <div
@@ -64,7 +64,7 @@ const Minat = () => {
               backgroundColor: "rgba(0, 0, 0, 0.5)",
               padding: "5px"
             }}
-            >Game</h1>
+            >{t("tertarik.game")}</h1>
             </div>
       </div>
       <div
@@ -91,7 +91,7 @@ const Minat = () => {
               backgroundColor: "rgba(0, 0, 0, 0.5)",
               padding: "5px"
             }}
-            >Musik</h1>
+            >{t("tertarik.musik")}</h1>
         </div>  
         <div
         style={{
@@ -111,7 +111,7 @@ const Minat = () => {
               backgroundColor: "rgba(0, 0, 0, 0.5)",
               padding: "5px"
             }}
-            >Belajar Hal Baru
+            >{t("tertarik.belajar")}
             </h1>
             </div>
       </div>
@@ -142,7 +142,7 @@ const Minat = () => {
               backgroundColor: "rgba(0, 0, 0, 0.5)",
               padding: "5px"
             }}
-            >Coding
+            >{t("tertarik.coding")}
             </h1>
 
         </div>

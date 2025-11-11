@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "PimpawCat";
   src: local("PimpawCat"), url(./fonts/Pimpaw\ Cat\ TTF\ Personal.ttf) format("opentype");
 }
@@ -11,7 +11,27 @@
   src: local("Hacker"), url(./fonts/Hacker.ttf) format("opentype");
 }
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Secular+One&display=swap'); */
+
+/* === IMPORT GOOGLE FONTS (HARUS DI ATAS) === */
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* === FONT LOCAL === */
+@font-face {
+  font-family: 'PimpawCat';
+  src: local('PimpawCat'), url('./fonts/Pimpaw Cat TTF Personal.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RamuanKurma';
+  src: local('RamuanKurma'), url('./fonts/Ramuan Kurma.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Hacker';
+  src: local('Hacker'), url('./fonts/Hacker.ttf') format('truetype');
+}
 
 *{
   margin: 0;

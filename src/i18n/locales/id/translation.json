@@ -1,0 +1,138 @@
+{
+  "title": "Selamat datang di portofolio saya",
+  "navbar": {
+    "home": "Beranda",
+    "resume": "Riwayat",
+    "pengalaman": "Pengalaman",
+    "skill": "Keahlian",
+    "project": "Proyek",
+    "training": "Pelatihan",
+    "sertifikat": "Sertifikat"
+  },
+  "welcome": "Selamat datang di portofolio saya",
+  "profile": {
+    "general": "Saya adalah pribadi yang disiplin, bertanggung jawab, dan memiliki semangat kerja tinggi. Terbiasa bekerja dalam tim maupun secara mandiri serta selalu berusaha memberikan hasil terbaik dalam setiap tugas yang diberikan. Saya orang yang pekerja keras, teliti, dan mampu bekerja di bawah tekanan. Saya selalu berusaha menjaga kualitas pekerjaan dan menyelesaikan tugas tepat waktu dengan hasil yang maksimal. Saya memiliki kemampuan komunikasi yang baik dan mudah beradaptasi dengan lingkungan baru. Saya senang bekerja sama dengan orang lain dan selalu berusaha menciptakan suasana kerja yang positif. Saya percaya bahwa kerja keras dan kejujuran adalah kunci kesuksesan. Saya selalu berusaha belajar hal baru untuk meningkatkan kemampuan dan memberikan kontribusi terbaik bagi perusahaan.",
+
+    "it": "Saya memiliki keterampilan dalam membangun aplikasi berupa website berdasarkan design UI/UX. Dengan pengalaman mengikuti Bootcamp coding, saya mengetahui bagaimana proses membuat website yang sesuai dengan design UI/UX. Saya adalah pribadi yang suka belajar hal baru, pekerja keras, mampu bekerja dengan tim maupun individu. Mengasah keterampilan bagi saya adalah hal yang penting agar dapat berguna bagi diri sendiri, orang lain, dan perusahaan. Dengan menunjukkan hasil portofolio saya, saya yakin dapat memberikan kontribusi untuk perusahaan dan client.",
+    "greeting": "Halo",
+    "me": "Saya",
+     "name": "Latif Budi Pamungkas",
+      "mottoTitle": "Motto Saya:",
+    "motto": "\"Saya bukan orang yang pintar, tapi saya adalah seseorang yang memahami proses dan bekerja keras. Pernah mencoba, pernah gagal — tidak masalah. Coba lagi, gagal lagi, gagal dengan lebih baik. Allah selalu mendengar dan selalu ada di sampingku. Perlakukan semua orang dengan baik dan terangi malam dengan kebaikan.\"",
+    "social": "Lihat media sosial saya"
+  },
+  "resume": {
+    "title1": "My",
+    "title2": "Resume",
+    "title": "Resume"
+  },
+  "menu": {
+    "profile": "Profil Pribadi",
+    "education": "Pendidikan",
+    "skill": "Keahlian",
+    "interest": "Minat"
+  },
+  "profileTitle": {
+    "profile title": "Profil Pribadi",
+    "province": "PROVINSI JAWA TIMUR",
+    "kabupaten": "KABUPATEN MADIUN"
+  },
+  "profileMenu": {
+    "nama": "NAMA",
+    "tempatTanggalLahir": "TEMPAT/TANGGAL LAHIR",
+    "pendidikanTerakhir": "PENDIDIKAN TERAKHIR",
+    "jenisKelamin": "JENIS KELAMIN",
+    "alamat": "ALAMAT",
+    "agama": "AGAMA",
+    "status": "STATUS PERKAWINAN",
+    "nomorTelepon": "NOMOR TELEPON",
+    "email": "EMAIL"
+  },
+  "profileContent": {
+    "nama": "LATIF BUDI PAMUNGKAS",
+    "tempatTanggalLahir": "MADIUN, 24 APRIL 1996",
+    "pendidikanTerakhir": "SMA",
+    "jenisKelamin": "LAKI - LAKI",
+    "alamat": "DUSUN 02, RT. 12/RW. 02 KEC. WONOASRI KAB. MADIUN",
+    "agama": "ISLAM",
+    "status": "BELUM KAWIN",
+    "nomorTelepon": "085782244135",
+    "email": "pamungkaslatifbudi@gmail.com"
+  },
+  "education": {
+    "educationTitle": "Pendidikan",
+    "education1": "SDN JATIREJO",
+    "education2": "SMPN 1 WONOASRI",
+    "education3": "SMAN 1 MEJAYAN",
+    "jurusan": "Jurusan",
+    "namajurusan": "IPS"
+  },
+  "skill": {
+    "skillTitle": "Keahlian",
+    "softSkill": "Soft Skill",
+    "hardSkill": "Hard Skill",
+    "disiplin": "Disiplin",
+    "jujur": "Jujur",
+    "mampuBekerja": "Mampu bekerja dengan tim maupun individu",
+    "komunikasi": "Mampu berkomunikasi dengan baik",
+    "komitmen": "Memiliki komitmen",
+    "pekerjaKeras": "Pekerja keras",
+    "bawahTekanan": "Mampu bekerja di bawah tekanan",
+    "las": "Las",
+    "komputer": "Komputer",
+    "inggris": "Bahasa Inggris",
+    "indonesia": "Bahasa Indonesia",
+    "korea": "Bahasa Korea"
+  },
+  "tertarik": {
+    "title": "Minat",
+    "futsal": "Futsal",
+    "game": "Game",
+    "musik": "Musik",
+    "belajar": "Belajar Hal Baru",
+    "coding": "Coding"
+  },
+"Pengalaman Kerja": {
+  "title": "Pengalaman Kerja",
+  "detail": "Lihat Detail",
+  "catering": "Katering",
+  "type1": "Lion Boga",
+  "foo": "Magang di FOO",
+  "type2": "Sriwijaya Air",
+  "grab": "Grab",
+  "type3": "Pengemudi Ojek Online",
+  "id express": "ID Express",
+  "type4": "Kurir Pengiriman",
+  "shopee": "Shopee Express",
+  "type5": "Kurir Paket"
+},
+  "detail menu": {
+    "title":"Detail Pengalaman Kerja Saya",
+    "perusahaan": "Perusahaan",
+    "posisi": "Posisi",
+    "lama bekerja": "Lama Bekerja",
+    "deskripsi": "Deskripsi"
+  },
+   "detail pekerjaan": {
+    "pt1": "PT Angkasa Aviasi Servis",
+    "catering": "Staf Layanan Katering",
+    "lama1": "Januari 2015 - Januari 2018",
+    "dekripsi kerja1": "- sebagai petugas catering service di maskapai hal pertama yang saya lakukan adalah memeriksa jadwal penerbangan sehingga dapat mengetahui jumlah pesawat dan rute mana saja yang beroperasi.\n- memeriksa kelengkapan barang dan makanan yang siap di muat ke cabin pesawat berdasarkan route penerbangan.\n- barang yang di maksud adalah tisu, napkin, plastik tea spon, paper cup, plastik cup, roll tissue, dan air mineral sedangkan untuk yang makanan berupa snack dan makanan frozen yang nantinya akan di massukkan ke dalam trolley galley, lalu jumlah barang dan makanan tersebut di tentukan dengan berapa landing pesawat tersebut beroperasi.\n- ketika barang dan makanan sudah di periksa semua dan lengkap sesuai dengan rute penerbangan, saya bersama petugas yang lain bersiap menuju ke lapangan untuk menguplift atau memuat semua barang yang ada di dalam trolley galley ke dalam pesawat dengan menggunakan truk HTC yang nantinya makanan dan minuman yang ada di dalam trolley tersebut akan di gunakan untuk pelayanan oleh pramugari kepada penumpang selama pesawat mengudara.\n- setelah semua sudah selesai termuat ke dalam pesawat selanjutnya saya bersama tim yang lain memonitor dan memeriksa pesawat yang lain mengenai kelengkapan stok barang yang tersisa di dalam pesawat apakah masih cukup atau kurang untuk penerbangan berikutya jika kurang maka akan dimuat jika masih cukup tidak perlu di tambah atau di ganti.",
+    "pt2": "PT Sriwijaya Air",
+    "siswa": "Siswa Magang Flight Operation Officer",
+    "lama2": "September 2019 - Januari 2020",
+    "dekripsi kerja2": "- Sebagai siswa Flight Operation Officer (FOO) yang melaksanakan OJT atau magang di perusahaan Sriwijaya Air, saya diwajibkan untuk mengikuti peraturan perusahaan selayaknya seperti karyawan yang bekerja sebagai FOO di sana, bekerja selama 8 jam dan mengikuti shift kerja di perusahaan tersebut.\n- Saya belajar dan mengikuti arahan karyawan atau senior saya yang sudah bekerja di perusahaan tersebut.\n- Hal pertama yang saya lakukan adalah mempersiapkan dokumen penerbangan seperti NOTAM, flight plan, SIGMET, dan windtemp yang nantinya akan diserahkan kepada kapten atau pilot sebelum terbang.\n- Setelah itu, saya melanjutkan untuk memonitor pesawat yang berangkat dan tiba di bandara melalui flight radar.\n- Membuat flight plan dan menghitung loadsheet untuk penerbangan selanjutnya.\n- Melakukan briefing kepada pilot mengenai cuaca, NOTAM, flight, dan loadsheet sebelum keberangkatan.\n- Flight plan berisi tentang perhitungan bahan bakar berdasarkan jarak rute penerbangan dan berat pesawat.\n- Loadsheet berisi tentang perhitungan keseimbangan pesawat berdasarkan jumlah penumpang dan jumlah bagasi di dalam kompartemen.\n- Berkomunikasi dengan pilot melalui radio komunikasi.\n- Membuat jadwal penerbangan berdasarkan rute penerbangan.\n- Mengajukan slot time ke pihak ATC untuk pelayanan komunikasi dan permintaan jadwal antre keberangkatan pesawat.",
+    "pt3": "PT Grab Indonesia",
+    "driver": "Driver Ojek Online",
+    "lama3": "Agustus 2018 - Januari 2021",
+    "dekripsi kerja3": "- Saya mendaftar di Grab sebagai driver ojek online mulai tahun 2018 semenjak saya menjadi siswa FOO di Merpati Training Center sampai 2021, selama saya magang di Sriwijaya Air saya menjadi driver ojek online Grab di wilayah Surabaya, area Juanda Sedati Agung Sidoarjo dan wilayah Surabaya kota sebagai pekerjaan sampingan.\n- Bertugas untuk mengantarkan penumpang dan makanan sesuai dengan permintaan di aplikasi.",
+    "pt4": "PT ID Express Logistik Indonesia",
+    "kurir id": "Kurir Event",
+    "lama4": "2021 - 2022",
+    "dekripsi kerja4": "- Saya bekerja sebagai kurir di ID Express mulai masuk tahun 2021 di TH kantor Mulyosari Surabaya, saya mengantar paket di wilayah atau area sekitar pantai Kenjeran dan area ITS (Institut Teknologi Sepuluh Nopember), selanjutnya saya pindah di TH Sukodono dan mengirim paket di wilayah kabupaten Sidoarjo area Kec. Buduran yaitu perumahan Valencia, perumahan Permata Alam Permai, dan desa Gemurung. Kurir event adalah kurir yang hanya bekerja jika ada event Shopee, Lazada, atau Tokopedia.",
+    "pt5": "PT Shopee Express Indonesia",
+    "kurir shopee": "Kurir Mitra",
+    "lama5": "2022 - 2023",
+    "dekripsi kerja5": "- Saya bekerja sebagai kurir di Shopee Express mulai masuk tahun 2022 di TH kantor Kec. Wonoasri Caruban Kab. Madiun, saya mengantar paket di wilayah atau area Kec. Saradan desa Bener, Tulung, Klumutan, Sumbersari, Sumberbendo, Klangon, Pajaran. Kurir Reguler atau Mitra adalah bukan kurir tetap yang tidak di target oleh perusahaan dan kurir yang bekerja jika jumlah paket membludak."
+  }
+}

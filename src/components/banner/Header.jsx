@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
+import i18 from "../../i18n"
 
 const Header = () => {
   const [bar, setBar] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const [activeNav, setActiveNav] = useState("home");
+  const [lang, setLang] = useState("id")
+  const { t,i18n } = useTranslation();
+  const [showDropdown, setShowDropdown] = useState(false)
 
   const sections = ["home", "resume", "pengalaman", "skill", "project", "training", "sertifikat"];
 
@@ -62,23 +67,83 @@ const Header = () => {
     };
   }, []);
 
+  
+
+  // // ganti bahasa 
+  //  const handleLanguageChange = (e) => {
+  //   const selectedLang = e.target.value;
+  //   setLang(selectedLang);
+  //   i18n.changeLanguage(selectedLang);
+  // };
+
+const handleLanguageChange = (selectedLang) => {
+  setLang(selectedLang);
+  i18n.changeLanguage(selectedLang);
+  localStorage.setItem("selectedLang", selectedLang);
+  setShowDropdown(false);
+};
+
+useEffect(() => {
+  const savedLang = localStorage.getItem("selectedLang") || "id";
+  setLang(savedLang);
+  i18n.changeLanguage(savedLang);
+}, []);
+
+
+
   return (
     <Container navbar={navbar}>
       <ContentContainer>
         <Logo>
           <span>Latif</span>
         </Logo>
-        <Title>Welcome To My Portofolio</Title>
+        {/* <Title>Welcome To My Portofolio</Title> */}
+        <Title>{t("title")}</Title>
       </ContentContainer>
       <Navbar bar={bar}>
         {sections.map((section) => (
           <Navlink key={section} active={activeNav === section}>
             <span onClick={() => handleNavClick(section)}>
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {/* {section.charAt(0).toUpperCase() + section.slice(1)} */}
+                {t(`navbar.${section}`)}
             </span>
           </Navlink>
         ))}
+{/* === DROPDOWN TRANSLATE CUSTOM === */}
+
       </Navbar>
+<TranslateContainer>
+  <Dropdown>
+    <DropdownButton onClick={() => setShowDropdown(!showDropdown)}>
+      {lang === "id" && "Indonesia"}
+      {lang === "en" && "English"}
+      {lang === "ko" && "한국어"}
+    </DropdownButton>
+
+    {showDropdown && (
+      <DropdownMenu>
+        <DropdownItem
+          onClick={() => handleLanguageChange("id")}
+          active={lang === "id"}
+        >
+          🇮🇩 Indonesia
+        </DropdownItem>
+        <DropdownItem
+          onClick={() => handleLanguageChange("en")}
+          active={lang === "en"}
+        >
+          🇺🇸 English
+        </DropdownItem>
+        <DropdownItem
+          onClick={() => handleLanguageChange("ko")}
+          active={lang === "ko"}
+        >
+          🇰🇷 한국어
+        </DropdownItem>
+      </DropdownMenu>
+    )}
+  </Dropdown>
+</TranslateContainer>
       <Bars className="bars" onClick={() => setBar(!bar)}>
         <Bar bar={bar}></Bar>
       </Bars>
@@ -154,7 +219,8 @@ const Logo = styled.div`
 const Title = styled.div`
   font-family: RamuanKurma;
   color: white;
-  font-size: 50px;
+  /* font-size: 50px; */
+   font-size: clamp(1.2rem, 2vw, 2rem);
   @media (max-width: 640px) {
     font-size: 20px;
   }
@@ -232,6 +298,62 @@ const Navlink = styled.a`
     width: 100%;
   }
 `;
+
+const TranslateContainer = styled.div`
+  position: relative;
+  margin-left: 1rem;
+  user-select: none;
+`;
+
+const Dropdown = styled.div`
+  position: relative;
+  display: inline-block;
+`;
+
+const DropdownButton = styled.div`
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+`;
+
+const DropdownMenu = styled.div`
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: #222;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  z-index: 999;
+  min-width: 130px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+`;
+
+const DropdownItem = styled.div`
+  padding: 8px 10px;
+  border-radius: 5px;
+  color: ${(props) => (props.active ? "#01be96" : "white")};
+  background: ${(props) => (props.active ? "rgba(1,190,150,0.1)" : "transparent")};
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+`;
+
 
 const Bars = styled.div`
   @media (max-width: 640px) {

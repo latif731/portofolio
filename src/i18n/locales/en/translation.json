@@ -1,0 +1,139 @@
+{
+    "title": "Welcome To My Portfolio",
+  "navbar": {
+    "home": "Home",
+    "resume": "Resume",
+    "pengalaman": "Experience",
+    "skill": "Skills",
+    "project": "Projects",
+    "training": "Training",
+    "sertifikat": "Certificate"
+  },
+  "welcome": "Welcome to my portfolio",
+  "profile": {
+    "general": "I am a disciplined and responsible person with a strong work ethic. I am used to working both in a team and independently, and I always strive to give my best in every task. I am hardworking, detail-oriented, and able to perform well under pressure. I always maintain the quality of my work and complete tasks on time with the best results. I have good communication skills and can easily adapt to new environments. I enjoy collaborating with others and always aim to create a positive work atmosphere. I believe that hard work and honesty are the keys to success. I continuously seek to learn new things to improve my abilities and contribute my best to the company.",
+
+    "it": "I have skills in building web-based applications based on UI/UX design. Through my experience attending a coding bootcamp, I have learned how to create websites that match the intended design. I am a person who loves learning new things, works hard, and can work both in a team and independently. For me, sharpening skills is essential to be useful to myself, others, and the company. By showcasing my portfolio, I am confident that I can contribute effectively to the company and clients.",
+    "greeting": "Hello",
+     "me": "I'm",
+     "name": "Latif Budi Pamungkas",
+      "mottoTitle": "My Motto:",
+      "motto": "\"I'm not smart, but I'm just a man who understands process and works hard. Ever tried, ever failed — no matter. Try again, fail again, fail better. Allah always listens and is always beside me. Treat everyone kindly and light up the night.\"",
+      "social": "Check out my social media"
+  },
+  "resume": {
+    "title1": "My",
+    "title2": "Resume",
+    "title": "Resume"
+  },
+  "menu": {
+    "profile": "Personal Profile",
+    "education": "Education",
+    "skill": "Skills",
+    "interest": "Interests"
+  },
+  "profileTitle": {
+    "profile title": "Personal Profile",
+    "province": "EAST JAVA PROVINCE",
+    "kabupaten": "MADIUN REGENCY"
+  },
+  "profileMenu": {
+    "nama": "NAME",
+    "tempatTanggalLahir": "PLACE/DATE OF BIRTH",
+    "pendidikanTerakhir": "LAST EDUCATION",
+    "jenisKelamin": "GENDER",
+    "alamat": "ADDRESS",
+    "agama": "RELIGION",
+    "status": "MARITAL STATUS",
+    "nomorTelepon": "PHONE NUMBER",
+    "email": "EMAIL"
+  },
+  "profileContent": {
+    "nama": "LATIF BUDI PAMUNGKAS",
+    "tempatTanggalLahir": "MADIUN, APRIL 24, 1996",
+    "pendidikanTerakhir": "Senior High School",
+    "jenisKelamin": "MALE",
+    "alamat": "DUSUN 02, RT. 12/RW. 02, WONOASRI DISTRICT, MADIUN REGENCY",
+    "agama": "ISLAM",
+    "status": "SINGLE",
+    "nomorTelepon": "+62 857-8224-4135",
+    "email": "pamungkaslatifbudi@gmail.com"
+  },
+  "education": {
+    "educationTitle": "Education",
+    "education1": "JATIREJO ELEMENTARY SCHOOL",
+    "education2": "WONOASRI 1 JUNIOR HIGH SCHOOL",
+    "education3": "MEJAYAN 1 SENIOR HIGH SCHOOL",
+    "jurusan": "Major",
+    "namajurusan": "Social Studies"
+  },
+  "skill": {
+    "skillTitle": "Skills",
+    "softSkill": "Soft Skills",
+    "hardSkill": "Hard Skills",
+    "disiplin": "Discipline",
+    "jujur": "Honesty",
+    "mampuBekerja": "Able to work in a team or individually",
+    "komunikasi": "Good communication skills",
+    "komitmen": "Commitment",
+    "pekerjaKeras": "Hard-working",
+    "bawahTekanan": "Able to work under pressure",
+    "las": "Welding",
+    "komputer": "Computer",
+    "inggris": "English",
+    "indonesia": "Indonesian",
+    "korea": "Korean"
+  },
+  "tertarik": {
+    "title": "Interests",
+    "futsal": "Futsal",
+    "game": "Gaming",
+    "musik": "Music",
+    "belajar": "Learning New Things",
+    "coding": "Coding"
+  },
+  "Pengalaman Kerja": {
+  "title": "Work Experience",
+  "detail": "See Detail",
+  "catering": "Catering",
+  "type1": "Lion Boga",
+  "foo": "FOO Internship",
+  "type2": "Sriwijaya Air",
+  "grab": "Grab",
+  "type3": "Motorbike Driver",
+  "id express": "ID Express",
+  "type4": "Delivery Courier",
+  "shopee": "Shopee Express",
+  "type5": "Package Courier"
+}
+,
+   "detail menu": {
+    "title":"My Detailed Work Experience",
+    "perusahaan": "Company",
+    "posisi": "Position",
+    "lama bekerja": "Working Period",
+    "deskripsi": "Description"
+  },
+  "detail pekerjaan": {
+    "pt1": "PT Angkasa Aviasi Servis",
+    "catering": "Catering Service Staff",
+    "lama1": "January 2015 - January 2018",
+    "dekripsi kerja1": "- As an airline catering service staff, the first thing I did was check the flight schedule to find out how many aircraft and which routes were operating.\n- Check the completeness of goods and food ready to be loaded into the aircraft cabin according to the flight route.\n- The items in question include tissues, napkins, plastic tea spoons, paper cups, plastic cups, roll tissue, and bottled water, while the food consists of snacks and frozen meals that will be placed into the galley trolley. The quantity of these goods and foods depends on how many landings the aircraft will operate.\n- After all goods and foods were checked and complete according to the flight route, my team and I prepared to go to the field to uplift or load all items in the galley trolley into the aircraft using an HTC truck. The food and drinks inside the trolley would later be used by flight attendants to serve passengers during the flight.\n- Once everything had been loaded into the aircraft, my team and I monitored and checked other aircraft to ensure the remaining stock of goods on board was sufficient for the next flight. If something was lacking, it would be reloaded; if sufficient, no replacement was needed.",
+    "pt2": "PT Sriwijaya Air",
+    "siswa": "Flight Operation Officer Intern",
+    "lama2": "September 2019 - January 2020",
+    "dekripsi kerja2": "- As a Flight Operation Officer (FOO) trainee conducting On-the-Job Training (OJT) at Sriwijaya Air, I was required to follow company regulations just like full-time employees working as FOOs, working 8 hours per day and following the company’s work shifts.\n- I learned and followed the guidance of employees and seniors who had already been working there.\n- The first task I performed was preparing flight documents such as NOTAM, flight plan, SIGMET, and windtemp, which were then handed over to the captain or pilot before departure.\n- After that, I monitored departing and arriving aircraft at the airport through flight radar.\n- Created flight plans and calculated loadsheets for the next flights.\n- Briefed pilots about weather, NOTAM, flight details, and loadsheets before departure.\n- The flight plan contained fuel calculations based on flight route distance and aircraft weight.\n- The loadsheet contained calculations of aircraft balance based on the number of passengers and the amount of baggage in the compartments.\n- Communicated with pilots via radio communication.\n- Created flight schedules based on route operations.\n- Submitted slot time requests to the ATC for communication services and takeoff queue scheduling.",
+    "pt3": "PT Grab Indonesia",
+    "driver": "Online Motorcycle Driver",
+    "lama3": "August 2018 - January 2021",
+    "dekripsi kerja3": "- I registered at Grab as an online motorcycle taxi driver starting in 2018, since I was a student at the Merpati Training Center, until 2021. During my internship at Sriwijaya Air, I worked as a Grab online motorcycle taxi driver in the Surabaya area, including Juanda, Sedati Agung, Sidoarjo, and Surabaya city area as a side job.\n- Responsible for delivering passengers and food according to requests made through the application.",
+    "pt4": "PT ID Express Logistics Indonesia",
+    "kurir id": "Event Courier",
+    "lama4": "2021 - 2022",
+    "dekripsi kerja4": "- I worked as a courier at ID Express starting in 2021 at the Mulyosari Surabaya TH office. I delivered packages in the areas around Kenjeran Beach and the ITS (Institut Teknologi Sepuluh Nopember) area. Then, I moved to the Sukodono TH office and delivered packages in the Sidoarjo regency area, specifically in Buduran District, including Valencia housing complex, Permata Alam Permai housing complex, and Gemurung village. An event courier is a courier who only works when there are events from Shopee, Lazada, or Tokopedia.",
+    "pt5": "PT Shopee Express Indonesia",
+    "kurir shopee": "Partner Courier",
+    "lama5": "2022 - 2023",
+    "dekripsi kerja5": "- I worked as a courier at Shopee Express starting in 2022 at the TH office in Wonoasri District, Caruban, Madiun Regency. I delivered packages in the Saradan District area, including Bener, Tulung, Klumutan, Sumbersari, Sumberbendo, Klangon, and Pajaran villages. A Regular or Partner Courier is not a permanent courier and is not targeted by the company, and works only when the number of packages surges."
+  }
+}

@@ -4,53 +4,55 @@ import { TiSocialInstagram } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TiSocialGithub } from "react-icons/ti";
 import foto from "../../assets/images/foto.jpg"
+import ProfileCaraousel from '../carousel/ProfileCaraousel';
+import i18 from "../../i18n"
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
-  return (
+    const { t,i18n } = useTranslation();
+    
+    return (
     <Container id="home">
         <Texts>
-            <h4>Halo <span className='green'>Saya</span></h4>
-            <h1>Latif Budi Pamungkas</h1>
+            {/* <h4>Halo <span className='green'>Saya</span></h4> */}
+            <h4>{t("profile.greeting")} <span className='green'>{t("profile.me")}</span></h4>
+            {/* <h1>Latif Budi Pamungkas</h1> */}
+            <h1>{t("profile.name")}</h1>
             {/* <h3>A WEB DEVELOPER</h3> */}
-            <p
+            <ProfileCaraousel  
+            t={t} i18n={i18n}
+            />
+            {/* <p
             style={{
-                whiteSpace:"pre-wrap"
+                paddingTop:"2rem",
+                color: "white",
+                fontWeight: "bold"
             }}
-            > 
-            Saya memiliki keterampilan dalam membangun aplikasi berupa website<br/>
-             berdasarkan design UI/UX,
-            dengan pengalaman mengikuti Bootcamp coding, <br/>
-            membuat saya mengetahui bagaimana proses 
-            membuat website yang sesuai <br/>
-            dengan design UI/UX,  
-            saya adalah pribadi yang suka belajar hal baru,
-            pekerja keras, <br/>
-            mampu bekerja dengan tim maupun individu, mengasah keterampilan
-            bagi saya <br/>
-            adalah suatu hal yang penting agar dapat berguna bagi diri saya dan 
-            orang lain <br/>
-            termasuk perusahaan. dengan menunjukkan hasil portofolio saya, <br/> 
-            saya yakin dapat memberikan kontribusi untuk perusahaan dan client.<br/>
-            </p>
+            >My Motto :</p> */}
             <p
             style={{
                 paddingTop:"2rem",
                 color: "white",
                 fontWeight: "bold"
             }}
-            >My Motto :</p>
+            >{t("profile.mottoTitle")}</p>
             <p
             style={{
                 fontWeight:"bold",
                 // paddingTop:"2rem",
                 color: "white"
             }}
-            >"I'm not smart, but i'm just a man that know about process and work hard,<br/>
+            >
+            {/* "I'm not smart, but i'm just a man that know about process and work hard,<br/>
             ever tried, ever failed, no matter, try again, fail again, fail better, Allah <br/> 
-            always listening and always beside me, treat everyone kindly and light up the night" 
+            always listening and always beside me, treat everyone kindly and light up the night"  */}
+            {t("profile.motto")}
             </p>       
             <Social>
-                <p>Check out my</p>
+                <p>
+                    {/* Check out my */}
+                    {t("profile.social")}
+                </p>
                 <div className='social-icons'>
                     <span><a href='#'><TiSocialInstagram className='ig'/></a></span>
                     <span><a href='#'><TiSocialLinkedin className='linkedin'/></a></span>
@@ -70,6 +72,7 @@ export default Profile
 const Container = styled.div`
     display: flex;
     padding-top: 8rem;
+    padding-bottom: 5rem;
     /* align-items: center; */
     gap: 2rem;
     z-index:0;
@@ -220,6 +223,7 @@ const Social = styled.div`
 `
 const ProfileContent = styled.div`
     img{
+        margin-top: 3rem;
         width: 15rem;
         border-radius: 50%;
         filter: drop-shadow(0px 0px 10px #f04242);
