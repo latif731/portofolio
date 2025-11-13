@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { PortfolioDatas } from '../../data/PortfolioData';
+import { PortfolioDatas } from '../../data/Portfolio';
+import { useTranslation } from 'react-i18next';
 
 const CardPorto = ({
   setOpenPortoDetail
 }) => {
   const [portData, setPortData] = useState([]);
+  const {t} = useTranslation()
+  const data = PortfolioDatas()
   // const [figmaData, setFigmaData] = useState([]);
 
   
@@ -13,7 +16,7 @@ const CardPorto = ({
 // }
 
   useEffect(() => {
-    setPortData(PortfolioDatas);
+    setPortData(data);
     // setFigmaData(FigmaDatas);
   }, []);
 
@@ -28,7 +31,7 @@ const CardPorto = ({
               <p>{d.desc}</p>
               <button
               onClick={() => setOpenPortoDetail(d.id)}
-              >See Detail</button>
+              >{t("porto menu.detail")}</button>
             </ContentOverlay>
           </Box>
         ))}

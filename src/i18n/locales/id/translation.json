@@ -16,8 +16,8 @@
     "it": "Saya memiliki keterampilan dalam membangun aplikasi berupa website berdasarkan design UI/UX. Dengan pengalaman mengikuti Bootcamp coding, saya mengetahui bagaimana proses membuat website yang sesuai dengan design UI/UX. Saya adalah pribadi yang suka belajar hal baru, pekerja keras, mampu bekerja dengan tim maupun individu. Mengasah keterampilan bagi saya adalah hal yang penting agar dapat berguna bagi diri sendiri, orang lain, dan perusahaan. Dengan menunjukkan hasil portofolio saya, saya yakin dapat memberikan kontribusi untuk perusahaan dan client.",
     "greeting": "Halo",
     "me": "Saya",
-     "name": "Latif Budi Pamungkas",
-      "mottoTitle": "Motto Saya:",
+    "name": "Latif Budi Pamungkas",
+    "mottoTitle": "Motto Saya:",
     "motto": "\"Saya bukan orang yang pintar, tapi saya adalah seseorang yang memahami proses dan bekerja keras. Pernah mencoba, pernah gagal — tidak masalah. Coba lagi, gagal lagi, gagal dengan lebih baik. Allah selalu mendengar dan selalu ada di sampingku. Perlakukan semua orang dengan baik dan terangi malam dengan kebaikan.\"",
     "social": "Lihat media sosial saya"
   },
@@ -92,28 +92,28 @@
     "belajar": "Belajar Hal Baru",
     "coding": "Coding"
   },
-"Pengalaman Kerja": {
-  "title": "Pengalaman Kerja",
-  "detail": "Lihat Detail",
-  "catering": "Katering",
-  "type1": "Lion Boga",
-  "foo": "Magang di FOO",
-  "type2": "Sriwijaya Air",
-  "grab": "Grab",
-  "type3": "Pengemudi Ojek Online",
-  "id express": "ID Express",
-  "type4": "Kurir Pengiriman",
-  "shopee": "Shopee Express",
-  "type5": "Kurir Paket"
-},
+  "Pengalaman Kerja": {
+    "title": "Pengalaman Kerja",
+    "detail": "Lihat Detail",
+    "catering": "Katering",
+    "type1": "Lion Boga",
+    "foo": "Magang di FOO",
+    "type2": "Sriwijaya Air",
+    "grab": "Grab",
+    "type3": "Pengemudi Ojek Online",
+    "id express": "ID Express",
+    "type4": "Kurir Pengiriman",
+    "shopee": "Shopee Express",
+    "type5": "Kurir Paket"
+  },
   "detail menu": {
-    "title":"Detail Pengalaman Kerja Saya",
+    "title": "Detail Pengalaman Kerja Saya",
     "perusahaan": "Perusahaan",
     "posisi": "Posisi",
     "lama bekerja": "Lama Bekerja",
     "deskripsi": "Deskripsi"
   },
-   "detail pekerjaan": {
+  "detail pekerjaan": {
     "pt1": "PT Angkasa Aviasi Servis",
     "catering": "Staf Layanan Katering",
     "lama1": "Januari 2015 - Januari 2018",
@@ -134,5 +134,34 @@
     "kurir shopee": "Kurir Mitra",
     "lama5": "2022 - 2023",
     "dekripsi kerja5": "- Saya bekerja sebagai kurir di Shopee Express mulai masuk tahun 2022 di TH kantor Kec. Wonoasri Caruban Kab. Madiun, saya mengantar paket di wilayah atau area Kec. Saradan desa Bener, Tulung, Klumutan, Sumbersari, Sumberbendo, Klangon, Pajaran. Kurir Reguler atau Mitra adalah bukan kurir tetap yang tidak di target oleh perusahaan dan kurir yang bekerja jika jumlah paket membludak."
+  },
+  "skilled": {
+    "title": "Keahlian",
+    "IT": "Teknologi Informasi",
+    "LAS": "Pengelasan"
+  },
+  "portofolio": {
+    "title1": "Portofolio",
+    "title2": "Wedspot Client",
+    "title3": "Wedspot Vendor",
+    "title4": "Proyek Detail Saya",
+    "title5": "Wedspot",
+    "title6": "Musicon",
+    "title7": "Situs Musicon",
+    "desc1": "Wedspot adalah aplikasi yang membantu pengguna untuk mendapatkan perencana pernikahan dan WO yang terpercaya sesuai dengan kebutuhan dan budget dari pengguna.",
+    "desc2": "Wedspot Vendor adalah aplikasi yang membantu pengguna mempromosikan layanan Wedding Organizer (WO), perencanaan pernikahan, atau usaha venue pernikahan dengan lebih mudah melalui jaringan yang lebih luas.",
+    "detail_description1": "- user akan langsung di suguhi dengan tampilan halaman utama yang berisi dengan paket atau jasa dari beberapa vendor WO atau Venue sehingga user dapat memilih dan menentukan paket sesuai dengan tema pernikahan yang di inginkan\n\n- user juga dapat melihat lebih banyak lagi paket di halaman berikutnya yaitu https://wedspot.vercel.app/package sehingga dapat membantu user untuk memilih sesuai keinginan sesuai dengan ketentuan mereka berdasarkan paket, budget, lokasi, dan total tamu undangan\n\n- ketika user memilih salah satu paket maka user akan di arahkan ke halaman https://wedspot.vercel.app/vendor/6612bd8d8c8140912cdf439f halaman ini menyuguhkan atau menampilkan detail data mengenai vendor dan paket apa saja yang di miliki vendor tersebut, user dapat melihat paket yang berisi harga, lokasi, rating paket dan jumlah pax atau undangan sesuai dengan nama paket tersebut.\n\n- ketika user memilih salah satu paket yang di miliki oleh vendor tersebut maka user akan di arahkan lagi ke halaman https://wedspot.vercel.app/package/661392be94f3b21e8dff62d9 user akan di suguhkan detail dari paket yang di pilih berisi foto atau gambar review paket serta pelayanan apa saja yang di dapatkan jika memilih paket tersebut.\n\n- jika user tertarik dengan detail paket yang di pilih, user dapat mengajukan permintaan quotation dengan menekan tombol ask for quotation dan akan menampilkan form berisi nama pengantin pria dan wanita, tempat tinggal, memilih lokasi pernikahan, memilih tanggal pernikahan yang akan di selenggarakan, budget atau anggaran yang sesuai dengan paket, dan berapa banyak jumlah tamu undangan yang ingin di undang, di harapkan user login terlebih dahulu jika ingin mengajukan request quotation karena jika user belum login dan menekan tombol request quotation user akan di arahkan ke halaman login dan register terlebih dahulu.\n\n- setelah user mengisi semua data dengan lengkap dan sesuai dengan keinginan user, user dapat mengirim request ke vendor lalu data akan di terima oleh vendor lalu user akan menunggu response balasan dari vendor untuk proses selanjutnya.\n\n- user dapat melihat data request quotation di halaman profile https://wedspot.vercel.app/profile dan user akan mendapatkan notifikasi yang berisi request sudah dikirim dan request di response oleh vendor.\n\n- di halaman profile user akan melihat data pribadi, notifikasi request quotation dan response vendor, dan data quotation yang di kirim ke vendor dan data inbox quotation yang berisi quotation balasan dari vendor.\n  note: (halaman profile dapat di akses jika user sudah login)",
+    "detail_description2": "- di vendor website wedspot user akan langsung di arahkan ke halaman utama yaitu login dan register bagi user yang belum terdaftar di sarankan untuk register terlebih dahulu dan bagi user yang sudah terdaftar bisa langsung mengisi form login untuk masuk ke halaman berikutnya.\n\n - setelah user masuk atau sudah login user akan di arahkan ke halaman My Store yang mana user di minta untuk melengkapi data informasi mengenai nama toko dan jenis vendor WO atau venue, user wajib mengisi Store Header, Store Avatar, Store_name Contact number, Email, Website, dst.\n\n - setelah user selesai melengkapi semua data, user dapat mengakses ke halaman membuat paket di bagaian halaman, membuat paket user dapat mengupload gambar paket yang sesuai untuk di pasarkan, menentukan nominal harga paket, menentukan jumlah maksimal dan minilmal tamu undangan, menentukan lokasi, serta memberikan deskripsi mengenai detail pelayanan berdasarkan nama paketnya.\n note: (user dapat mengakses halaman paket jika user sudah melengkapi semua data diri nama toko atau nama vendor)\n\n - setelah semua data sudah terisi baik data diri vendor dan data detail paket yang sudah di buat maka semua data di simpan dan akan tampil di web wedspot client sehingga datanya dapat di lihat oleh client atau customer yang akan memesan paket yang sudah di buat oleh vendor sebelumnya.\n\n - akan muncul notifikasi ketika terdapat pesanan dari client atau customer dan data pesanan atau request akan tersimpan  di halaman quotations.\n\n - di halaman quotation, vendor akan merespon dengan mengupload file pdf yang berisi tentang detail quotation yang akan di kirim kembali ke client atau customer.\n\n - halaman paket dan halaman my store dapat di edit sesuai kebutuhan"
+  },
+  "porto menu": {
+    "portofolio": "Portofolio Saya",
+    "design": "Desain",
+    "detail": "Lihat Detail",
+    "type": "tipe",
+    "desc": "Deskripsi",
+    "web": "Situs Web",
+    "Detail Figma":"Detail Figma",
+    "tool":"Alat/Perpustakaan/Kerangka Kerja",
+    "link":"Tautan ke Tampilan Proyek"
   }
 }

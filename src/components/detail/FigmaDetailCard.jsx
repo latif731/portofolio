@@ -1,24 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { RxCross1 } from "react-icons/rx";
-// import redux from "../../images/redux.png";
-// import react from "../../images/reactjs.png";
-// import bootstrap from "../../images/reactbootstrap.jpg";
-// import materialui from "../../images/materialui.png";
-// import axios from "../../images/axios.jpg";
-// import imagegalery from "../../images/reactimagegalery.png";
-// import toastify from "../../images/reacttoastify.png";
-// import reactrouter from "../../images/reactrouter.png";
-// import sass from "../../images/sass.png";
-// import slick from "../../images/slick.png";
-// import css from "../../images/css.png";
-// import vercel from "../../images/vercel.png";
-// import designwedspot from "../../images/wedspotfigmadesign.png"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import { useTranslation } from "react-i18next";
 
 const FigmaDetailCard = ({ setOpenFigmaDetail,selectedFigmaDetail }) => {
   const [selectedImage, setSelectedImage]= useState(selectedFigmaDetail.imageData[0])
-
+  const {t} = useTranslation()
   const handleDetailOpen = () => {
     setOpenFigmaDetail(false);
   };
@@ -37,7 +25,8 @@ const FigmaDetailCard = ({ setOpenFigmaDetail,selectedFigmaDetail }) => {
               color: "white",
             }}
           >
-             Detail Figma
+             {/* Detail Figma */}
+             {t("porto menu.Detail Figma")}
           </h1>
         </TitleHeader>
         <Content>

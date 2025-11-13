@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import styled from "styled-components"
-import { figmaDatas } from '../../data/figmaData'
+import { figmaDatas } from '../../data/figma'
+import { useTranslation } from 'react-i18next'
 
 const CardFigma = ({setOpenFigmaDetail}) => {
     const [figmaData, setFigmaData] = useState([])
     console.log("figmaData", figmaData)
+    const {t} = useTranslation()
+    const data = figmaDatas()
     useEffect(() => {
-        setFigmaData(figmaDatas)
+        setFigmaData(data)
     },[])
   return (
     <Container>
@@ -21,7 +24,8 @@ const CardFigma = ({setOpenFigmaDetail}) => {
                     <button
                     onClick={() => setOpenFigmaDetail(d.id)}
                     >
-                        See Detail
+                        {/* See Detail */}
+                        {t("porto menu.detail")}
                     </button>
                 </ContentOverlay>
             </Box>

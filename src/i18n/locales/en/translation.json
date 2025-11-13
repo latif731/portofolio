@@ -1,5 +1,5 @@
 {
-    "title": "Welcome To My Portfolio",
+  "title": "Welcome To My Portfolio",
   "navbar": {
     "home": "Home",
     "resume": "Resume",
@@ -15,11 +15,11 @@
 
     "it": "I have skills in building web-based applications based on UI/UX design. Through my experience attending a coding bootcamp, I have learned how to create websites that match the intended design. I am a person who loves learning new things, works hard, and can work both in a team and independently. For me, sharpening skills is essential to be useful to myself, others, and the company. By showcasing my portfolio, I am confident that I can contribute effectively to the company and clients.",
     "greeting": "Hello",
-     "me": "I'm",
-     "name": "Latif Budi Pamungkas",
-      "mottoTitle": "My Motto:",
-      "motto": "\"I'm not smart, but I'm just a man who understands process and works hard. Ever tried, ever failed — no matter. Try again, fail again, fail better. Allah always listens and is always beside me. Treat everyone kindly and light up the night.\"",
-      "social": "Check out my social media"
+    "me": "I'm",
+    "name": "Latif Budi Pamungkas",
+    "mottoTitle": "My Motto:",
+    "motto": "\"I'm not smart, but I'm just a man who understands process and works hard. Ever tried, ever failed — no matter. Try again, fail again, fail better. Allah always listens and is always beside me. Treat everyone kindly and light up the night.\"",
+    "social": "Check out my social media"
   },
   "resume": {
     "title1": "My",
@@ -93,22 +93,21 @@
     "coding": "Coding"
   },
   "Pengalaman Kerja": {
-  "title": "Work Experience",
-  "detail": "See Detail",
-  "catering": "Catering",
-  "type1": "Lion Boga",
-  "foo": "FOO Internship",
-  "type2": "Sriwijaya Air",
-  "grab": "Grab",
-  "type3": "Motorbike Driver",
-  "id express": "ID Express",
-  "type4": "Delivery Courier",
-  "shopee": "Shopee Express",
-  "type5": "Package Courier"
-}
-,
-   "detail menu": {
-    "title":"My Detailed Work Experience",
+    "title": "Work Experience",
+    "detail": "See Detail",
+    "catering": "Catering",
+    "type1": "Lion Boga",
+    "foo": "FOO Internship",
+    "type2": "Sriwijaya Air",
+    "grab": "Grab",
+    "type3": "Motorbike Driver",
+    "id express": "ID Express",
+    "type4": "Delivery Courier",
+    "shopee": "Shopee Express",
+    "type5": "Package Courier"
+  },
+  "detail menu": {
+    "title": "My Detailed Work Experience",
     "perusahaan": "Company",
     "posisi": "Position",
     "lama bekerja": "Working Period",
@@ -135,5 +134,35 @@
     "kurir shopee": "Partner Courier",
     "lama5": "2022 - 2023",
     "dekripsi kerja5": "- I worked as a courier at Shopee Express starting in 2022 at the TH office in Wonoasri District, Caruban, Madiun Regency. I delivered packages in the Saradan District area, including Bener, Tulung, Klumutan, Sumbersari, Sumberbendo, Klangon, and Pajaran villages. A Regular or Partner Courier is not a permanent courier and is not targeted by the company, and works only when the number of packages surges."
+  },
+  "skilled": {
+    "title": "Skill",
+    "IT": "Information Technology",
+    "LAS": "Welding"
+  },
+  "portofolio": {
+    "type":"Website",
+    "title1": "Portfolio",
+    "title2": "Wedspot Client",
+    "title3": "Wedspot Vendor",
+    "title4":"My Detail Project",
+    "title5": "Wedspot",
+    "title6": "Musicon",
+    "title7": "Musicon Website",
+    "desc1": "Wedspot is an application that helps users find trusted wedding planners and organizers (WO) according to their needs and budget.",
+    "desc2":"Wedspot Vendor is an application that helps users promote their Wedding Organizer (WO) services, wedding planning, or wedding venue business more easily through a broader network.",
+    "detail_description": "- users are immediately presented with the main homepage that contains packages or services from various WO vendors or venues, allowing them to choose and determine the package according to their preferred wedding theme.\n\n- users can also explore more packages on the next page at https://wedspot.vercel.app/package, which helps them choose based on their preferences, package type, budget, location, and total number of invited guests.\n\n- when a user selects one of the packages, they are directed to the page https://wedspot.vercel.app/vendor/6612bd8d8c8140912cdf439f, which displays detailed data about the vendor and the packages offered. Users can view information such as price, location, package rating, and the number of guests included in the package.\n\n- when a user selects one of the vendor’s packages, they are redirected again to https://wedspot.vercel.app/package/661392be94f3b21e8dff62d9, where they can see detailed information about the chosen package, including photos, reviews, and details of the services provided.\n\n- if a user is interested in the selected package, they can submit a quotation request by clicking the “Ask for Quotation” button, which opens a form containing details such as the names of the bride and groom, residence, wedding location, wedding date, budget according to the package, and the number of guests. Users are required to log in before submitting a quotation request. If not logged in, they will be redirected to the login or register page.\n\n- after the user fills in all the required information completely and correctly, they can send a request to the vendor. The data will be received by the vendor, and the user will wait for the vendor’s response for the next process.\n\n- users can view their quotation request data on the profile page at https://wedspot.vercel.app/profile, where they will receive notifications confirming that their request has been sent and responded to by the vendor.\n\n- on the profile page, users can see their personal data, quotation requests and vendor responses, as well as sent and received quotation messages.\n  note: (the profile page can only be accessed if the user is logged in)",
+    "detail_description2": "- On the Wedspot vendor website, users will be directly directed to the main page, which is the login and register page. For users who have not registered, it is recommended to register first, while registered users can directly fill out the login form to proceed to the next page.\n\n - After the user logs in successfully, they will be redirected to the My Store page, where the user is required to complete information about the store name and the type of vendor, either Wedding Organizer (WO) or Venue. The user must fill out the Store Header, Store Avatar, Store Name, Contact Number, Email, Website, etc.\n\n - After completing all the required data, the user can access the package creation page. In this section, users can upload package images suitable for marketing, set the package price, determine the maximum and minimum number of guests, specify the location, and provide a detailed description of the services offered based on the package name.\n Note: (Users can access the package page only if they have completed all personal and store information such as store name or vendor name.)\n\n - Once all vendor personal information and package details are filled out, all data will be saved and displayed on the Wedspot client website so that clients or customers can see and order the packages that have been created by the vendor.\n\n - A notification will appear when there is an order or request from a client or customer, and the order or request data will be stored on the quotations page.\n\n - On the quotations page, the vendor can respond by uploading a PDF file containing detailed quotation information that will be sent back to the client or customer.\n\n - The package page and My Store page can be edited according to needs."
+  },
+  "porto menu": {
+    "portofolio": "MY Portfolio",
+    "design": "Design",
+    "detail": "See Detail",
+    "type":"type",
+    "desc":"Description",
+    "web":"Website",
+    "Detail Figma":"Figma Detail",
+    "tool":"Tools/Library/Framework",
+    "link":"Link To Show Case"
   }
 }

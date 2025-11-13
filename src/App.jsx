@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Resume from "./components/education/Resume";
 import Pengalaman from "./components/pengalaman/Pengalaman";
 import Minat from "./components/carousel/Minat";
-import Programmer from "./components/Programmer/Programmer";
+// import Programmer from "./components/SkillList/Programmer";
 import Circular from "./components/circular/Circular";
 import SkillCard from "./components/card/SkillCard";
 import PortFolio from "./components/portfolio/PersonalProject";
@@ -15,6 +15,7 @@ import Training from "./components/training/Training";
 import Certificate from "./components/certificate/Certificate";
 import MyPartner from "./components/mypartner/MyPartner";
 import Footer from "./components/footer/Footer";
+import Skill from "./components/skill/Skill";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
       <Banner>
         <Pengalaman />
       </Banner>
-      <Programmer />
+      {/* <Programmer /> */}
+      <Skill/>
       <Banner>
         <PersonalProject />
         {/* <CardPorto/> */}

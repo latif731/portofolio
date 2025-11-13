@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { RxCross1 } from "react-icons/rx";
+import { useTranslation } from "react-i18next";
 
 const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
   const handleDetailOpen = () => {
     setOpenPortoDetail(false);
   };
+  const {t} = useTranslation()
   return (
     <Container>
       <ContentWrapper>
@@ -18,7 +20,8 @@ const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
               color: "white",
             }}
           >
-            My Detail Project
+            {/* My Detail Project */}
+            {t("portofolio.title4")}
           </h1>
         </TitleHeader>
         <Content>
@@ -26,11 +29,13 @@ const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
             <h2>{selectedPortoDetail.title}</h2>
           </Title>
           <MainContent>
-            <h4>type : {selectedPortoDetail.type}</h4>
+            {/* <h4>type : {selectedPortoDetail.type}</h4> */}
+            <h4>{t("porto menu.type")} : {selectedPortoDetail.type}</h4>
 
             {/* <video src={videoObj.url} loop muted id="autoplay"/> */}
             <div>
-              <h4>Desc :</h4>
+              {/* <h4>Desc :</h4> */}
+              <h4>{t("porto menu.desc")} :</h4>
               <p
               style={{
                 whiteSpace:"pre-wrap"
@@ -42,7 +47,8 @@ const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
                 width: "100%",
               }}
             >
-              <h4>Tools/Library/Framework :</h4>
+              {/* <h4>Tools/Library/Framework :</h4> */}
+              <h4>{t("porto menu.tool")}:</h4>
               <div
                 style={{
                   display: "flex",
@@ -60,7 +66,8 @@ const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
             </div>
             <div>
               <div>
-                <h4>Link To Show Case:</h4>
+                {/* <h4>Link To Show Case:</h4> */}
+                <h4>{t("porto menu.link")}:</h4>
               </div>
               <a
                 href={selectedPortoDetail.link}

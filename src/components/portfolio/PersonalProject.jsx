@@ -2,10 +2,12 @@ import React, {useState, useEffect} from 'react'
 import styled from "styled-components"
 import CardPorto from './CardPorto'
 import CardFigma from './CardFigma'
-import { PortfolioDatas } from '../../data/PortfolioData'
+import { PortfolioDatas } from '../../data/Portfolio'
 import FigmaDetailCard from '../detail/FigmaDetailCard'
 import PortoDetailCard from '../detail/PortoDetailCard'
-import { figmaDatas } from '../../data/figmaData'
+import { figmaDatas } from '../../data/figma'
+import { useTranslation } from "react-i18next";
+
 // import FigmaDetailCard from '../detail/FigmaDetailCard'
 
 
@@ -17,34 +19,41 @@ const PersonalProject = () => {
   const [selectedPortoDetail, setSelectedPortoDetail] = useState(null)
   const [selectedFigmaDetail, setSelectedFigmaDetail] = useState(null)
   const [openFigmaDetail, setOpenFigmaDetail] = useState(false)
+  const { t,i18n } = useTranslation();
+  const data = PortfolioDatas()
+  console.log(data)
+  const figmaData = figmaDatas() 
 
   const handleOpenPortoDetail = (id) => {
-    const detail = PortfolioDatas.find(portfolio => portfolio.id === id)
+    const detail = data.find(portfolio => portfolio.id === id)
     setSelectedPortoDetail(detail)
     setOpenPortoDetail(true)
   }
 
   const handleFigmaDetail = (id) => {
-    const detail = figmaDatas.find(figma => figma.id === id)
+    const detail = figmaData.find(figma => figma.id === id)
     setSelectedFigmaDetail(detail)
     setOpenFigmaDetail(true)
   }
 
   return (
     <Container id="project">
-        <h1>My Personal Project</h1>
+        {/* <h1>Portofolio</h1> */}
+        <h1>{t("portofolio.title1")}</h1>
         <TabContainer>
           <Web
           onClick={() => setActive(1)}
           active={active === 1}
           >
-            <h5>My Portfolio</h5>
+            {/* <h5>My Portfolio</h5> */}
+            <h5>{t("porto menu.portofolio")}</h5>
           </Web>
           <Figma
           onClick={() => setActive(2)}
           active={active === 2}
           >
-          <h5>UI/UX Design</h5>
+          {/* <h5>UI/UX Design</h5> */}
+          <h5>{t("porto menu.design")}</h5>
           </Figma>
         </TabContainer>
         {
