@@ -11,10 +11,11 @@ import emailjs from "@emailjs/browser"
 import { TiSocialInstagram } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TiSocialGithub } from "react-icons/ti";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const form = useRef()
-
+  const {t} = useTranslation()
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -35,7 +36,8 @@ const Footer = () => {
   return (
     <Container>
       <LeftContainer>
-        <h1>Contact</h1>
+        {/* <h1>Contact</h1> */}
+        <h1>{t("kontak")}</h1>
         <div
           style={{
             display: "flex",
@@ -50,8 +52,10 @@ const Footer = () => {
               gap: "1rem",
             }}
           >
-            <span>Alamat :</span>
-            <p>Ds. Jatirejo Rt. 12/Rw. 02 Kec.Wonoasri Kab. Madiun</p>
+            {/* <span>Alamat :</span> */}
+            <span>{t("lokasi menu.alamat")} :</span>
+            {/* <p>Ds. Jatirejo Rt. 12/Rw. 02 Kec.Wonoasri Kab. Madiun</p> */}
+            <p>{t("detail lokasi.alamat")}</p>
           </div>
           <div
             style={{
@@ -59,8 +63,10 @@ const Footer = () => {
               gap: "1rem",
             }}
           >
-            <span>No Telp :</span>
-            <p>085782244135</p>
+            {/* <span>No Telp :</span> */}
+            <span>{t("lokasi menu.telepon")} :</span>
+            {/* <p>085782244135</p> */}
+            <p>{t("detail lokasi.telepon")}</p>
           </div>
           <div
             style={{
@@ -68,8 +74,10 @@ const Footer = () => {
               gap: "1rem",
             }}
           >
-            <span>Email :</span>
-            <p>pamungkaslatifbudi@gmail.com</p>
+            {/* <span>Email :</span> */}
+            <span>{t("lokasi menu.email")} :</span>
+            {/* <p>pamungkaslatifbudi@gmail.com</p> */}
+            <p>{t("detail lokasi.email")}</p>
           </div>
         </div>
         <div
@@ -99,7 +107,7 @@ const Footer = () => {
               </span>
               <input 
               type="text" 
-              placeholder="Fullname..."
+              placeholder={t("Umpan.Nama Lengkap")}
               name="user_name"
               required 
               />
@@ -110,7 +118,7 @@ const Footer = () => {
               </span>
               <input 
               type="email" 
-              placeholder="Email..."
+              placeholder={t("Umpan.Email")}
               name="user_email" 
               required
               />
@@ -128,17 +136,18 @@ const Footer = () => {
               <textarea 
               cols="30" 
               rows="10" 
-              placeholder="Message..."
+              placeholder={t("Umpan.Pesan")}
               name="message"
               ></textarea>
             </div>
             <button
             type="submit"
-            >Submit</button>
+            >{t("kirim")}</button>
           </form>
         </Form>
         <Social>
-                <p>Social Media</p>
+                {/* <p>Social Media</p> */}
+                <p>{t("Media Sosial")}</p>
                 <div className='social-icons'>
                     <span><a href='#'><TiSocialInstagram className='ig'/></a></span>
                     <span><a href='#'><TiSocialLinkedin className='linkedin'/></a></span>

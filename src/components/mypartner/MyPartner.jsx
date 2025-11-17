@@ -11,11 +11,13 @@ import mdn from "../../assets/images/mdn.png";
 import wschool from "../../assets/images/w3school.png";
 import medium from "../../assets/images/medium.png";
 import freecodecamp from "../../assets/images/freecodecamp.png";
+import { useTranslation } from "react-i18next";
 
 const MyPartner = () => {
+  const {t} = useTranslation()
   return (
     <Container>
-      <h1>My Partner</h1>
+      <h1>{t("partner")}</h1>
       <ItemContent
         style={{
           display: "flex",

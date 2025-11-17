@@ -160,8 +160,39 @@
     "type": "tipe",
     "desc": "Deskripsi",
     "web": "Situs Web",
-    "Detail Figma":"Detail Figma",
-    "tool":"Alat/Perpustakaan/Kerangka Kerja",
-    "link":"Tautan ke Tampilan Proyek"
+    "Detail Figma": "Detail Figma",
+    "tool": "Alat/Perpustakaan/Kerangka Kerja",
+    "link": "Tautan ke Tampilan Proyek"
+  },
+  "trainning": {
+    "title": "Pelatihan atau Kursus",
+    "foo": "FOO (Petugas Operasi Penerbangan)",
+    "glints": "Glints Academy Bootcamp",
+    "las": "BLK Mojokerto"
+  },
+  "deskripsi": {
+    "foo": "Saya mengikuti training atau pelatihan penerbangan dimulai pada pertengahan tahun 2018 hingga berakhir di tahun 2020.Dalam pelatihan tersebut saya mengambil program FOO (Flight Operation Officer) kurang lebih selama 1 tahun, 3 bulan kelas teori, 3 bulan kelas simulasi, dan 3 bulan on job training di PT Sriwijaya Airline.",
+    "glints": "Glints Academy Bootcamp adalah pelatihan atau training coding yang ditempuh hanya dalam waktu 3 bulan. Saya masuk di pertengahan tahun 2021 dan mengambil program Frontend Developer. Dalam pelatihan ini saya belajar membuat aplikasi berbasis web. Materi yang saya pelajari selama mengikuti bootcamp adalah ReactJS, Bootstrap, CSS, HTML, dan Redux Saga. Proses pembelajaran dilakukan secara intensif melalui Zoom atau online setiap hari dengan mengikuti kelas pagi dan dilanjutkan dengan review kelas malam. Setiap minggu kami diberi tugas, dan setelah 1 bulan setengah semua materi telah disampaikan, kami melanjutkan ke mini project membuat web movie. Pada bulan terakhir kami fokus mengerjakan final project berupa website atau aplikasi bernama Wedspot. Seluruh proses pengerjaan dilakukan secara tim dan berdasarkan desain UI/UX.",
+    "las": "Saya mengikuti pelatihan di BLK Mojokerto dengan mengambil program pelatihan pengelasan plat 3G. Saya mulai pada akhir tahun 2023. Pelatihan dilaksanakan selama 1 bulan setengah. Pengelasan 3G adalah posisi pengelasan secara vertikal untuk menyambung dua plat dengan cara membuat tembusan atau groove. Proses pengelasan menggunakan mesin las listrik dan stik las LB52U untuk tembusan dan RD60 untuk filler serta caping. Polaritas yang digunakan untuk proses kampuh atau tembusan adalah DCEN (Direct Current Electrode Negative), sedangkan polaritas yang digunakan untuk filler dan caping adalah DCEP (Direct Current Electrode Positive)."
+  },
+  "sertifikat": "Sertifikat",
+  "partner": "Partner Saya",
+  "kontak": "Kontak",
+  "lokasi menu": {
+    "alamat": "Alamat",
+    "telepon": "No. Telp",
+    "email": "Email"
+  },
+  "detail lokasi": {
+    "alamat": "Ds. Jatirejo Rt. 12/Rw. 02 Kec. Wonoasri Kab. Madiun",
+    "telepon": "085782244135",
+    "email": "pamungkaslatifbudi@gmail.com"
+  },
+  "Media Sosial":"Media Sosial",
+  "kirim":"Kirim",
+  "Umpan":{
+   "Nama Lengkap":"Nama Lengkap...", 
+   "Email":"Email..." ,
+   "Pesan":"Pesan..." 
   }
 }

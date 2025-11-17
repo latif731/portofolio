@@ -4,7 +4,7 @@ import ProgramSkill from "../carousel/ProgramSkill";
 import Las from "../SkillList/Las";
 import { useTranslation } from "react-i18next";
 
-const Programmer = () => {
+const   Skill = () => {
   const [activeSkill, setActiveSkill] = useState("IT");
   const [open, setOpen] = useState(true);
   const {t} = useTranslation()
@@ -68,7 +68,7 @@ const Programmer = () => {
   );
 };
 
-export default Programmer;
+export default Skill;
 
 // === styled components ===
 const Container = styled.div`
@@ -95,7 +95,7 @@ const Pilihan = styled.div`
 
   button {
     margin-top: 1rem;
-    width: 100px;
+    width: 200px;
     height: 50px;
     background-color: transparent;
     border-radius: 10%;

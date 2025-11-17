@@ -141,16 +141,16 @@
     "LAS": "Welding"
   },
   "portofolio": {
-    "type":"Website",
+    "type": "Website",
     "title1": "Portfolio",
     "title2": "Wedspot Client",
     "title3": "Wedspot Vendor",
-    "title4":"My Detail Project",
+    "title4": "My Detail Project",
     "title5": "Wedspot",
     "title6": "Musicon",
     "title7": "Musicon Website",
     "desc1": "Wedspot is an application that helps users find trusted wedding planners and organizers (WO) according to their needs and budget.",
-    "desc2":"Wedspot Vendor is an application that helps users promote their Wedding Organizer (WO) services, wedding planning, or wedding venue business more easily through a broader network.",
+    "desc2": "Wedspot Vendor is an application that helps users promote their Wedding Organizer (WO) services, wedding planning, or wedding venue business more easily through a broader network.",
     "detail_description": "- users are immediately presented with the main homepage that contains packages or services from various WO vendors or venues, allowing them to choose and determine the package according to their preferred wedding theme.\n\n- users can also explore more packages on the next page at https://wedspot.vercel.app/package, which helps them choose based on their preferences, package type, budget, location, and total number of invited guests.\n\n- when a user selects one of the packages, they are directed to the page https://wedspot.vercel.app/vendor/6612bd8d8c8140912cdf439f, which displays detailed data about the vendor and the packages offered. Users can view information such as price, location, package rating, and the number of guests included in the package.\n\n- when a user selects one of the vendor’s packages, they are redirected again to https://wedspot.vercel.app/package/661392be94f3b21e8dff62d9, where they can see detailed information about the chosen package, including photos, reviews, and details of the services provided.\n\n- if a user is interested in the selected package, they can submit a quotation request by clicking the “Ask for Quotation” button, which opens a form containing details such as the names of the bride and groom, residence, wedding location, wedding date, budget according to the package, and the number of guests. Users are required to log in before submitting a quotation request. If not logged in, they will be redirected to the login or register page.\n\n- after the user fills in all the required information completely and correctly, they can send a request to the vendor. The data will be received by the vendor, and the user will wait for the vendor’s response for the next process.\n\n- users can view their quotation request data on the profile page at https://wedspot.vercel.app/profile, where they will receive notifications confirming that their request has been sent and responded to by the vendor.\n\n- on the profile page, users can see their personal data, quotation requests and vendor responses, as well as sent and received quotation messages.\n  note: (the profile page can only be accessed if the user is logged in)",
     "detail_description2": "- On the Wedspot vendor website, users will be directly directed to the main page, which is the login and register page. For users who have not registered, it is recommended to register first, while registered users can directly fill out the login form to proceed to the next page.\n\n - After the user logs in successfully, they will be redirected to the My Store page, where the user is required to complete information about the store name and the type of vendor, either Wedding Organizer (WO) or Venue. The user must fill out the Store Header, Store Avatar, Store Name, Contact Number, Email, Website, etc.\n\n - After completing all the required data, the user can access the package creation page. In this section, users can upload package images suitable for marketing, set the package price, determine the maximum and minimum number of guests, specify the location, and provide a detailed description of the services offered based on the package name.\n Note: (Users can access the package page only if they have completed all personal and store information such as store name or vendor name.)\n\n - Once all vendor personal information and package details are filled out, all data will be saved and displayed on the Wedspot client website so that clients or customers can see and order the packages that have been created by the vendor.\n\n - A notification will appear when there is an order or request from a client or customer, and the order or request data will be stored on the quotations page.\n\n - On the quotations page, the vendor can respond by uploading a PDF file containing detailed quotation information that will be sent back to the client or customer.\n\n - The package page and My Store page can be edited according to needs."
   },
@@ -158,11 +158,42 @@
     "portofolio": "MY Portfolio",
     "design": "Design",
     "detail": "See Detail",
-    "type":"type",
-    "desc":"Description",
-    "web":"Website",
-    "Detail Figma":"Figma Detail",
-    "tool":"Tools/Library/Framework",
-    "link":"Link To Show Case"
+    "type": "type",
+    "desc": "Description",
+    "web": "Website",
+    "Detail Figma": "Figma Detail",
+    "tool": "Tools/Library/Framework",
+    "link": "Link To Show Case"
+  },
+  "trainning": {
+    "title": "Training or Course",
+    "foo": "FOO (Flight Operation Officer)",
+    "glints": "Glints Academy Bootcamp",
+    "las": "BLK Mojokerto"
+  },
+  "deskripsi": {
+    "foo": "I participated in aviation training that started in mid-2018 and ended in 2020. In this training, I took the FOO (Flight Operation Officer) program for approximately one year, which consisted of 3 months of theory classes, 3 months of simulation classes, and 3 months of on-the-job training at PT Sriwijaya Airline.",
+    "glints": "Glints Academy Bootcamp is a coding training program completed in just 3 months. I joined in mid-2021 and took the Frontend Developer program. During this training, I learned how to create web-based applications. The subjects I studied included ReactJS, Bootstrap, CSS, HTML, and Redux Saga. The learning process was intensive, conducted via Zoom or online every day, attending morning classes and continuing with evening review sessions. Every week, we were given assignments, and after one and a half months, when all materials had been covered, we moved on to a mini project to create a movie website. In the final month, we fully focused on building the final project — a website or web application called Wedspot. All the project work was done as a team and based on a UI/UX design.",
+    "las": "I attended training at BLK Mojokerto, taking the 3G plate welding training program. I started in late 2023. The training lasted for one and a half months. 3G welding is a vertical welding position used to join two plates by creating a penetration or groove. The welding process used an electric welding machine and welding rods — LB52U for penetration and RD60 for filler and capping. The polarity used for the root pass or penetration process was DCEN (Direct Current Electrode Negative), while for the filler and capping process, DCEP (Direct Current Electrode Positive) was used."
+  },
+  "sertifikat": "Certificate",
+  "partner": "My Partner",
+  "kontak": "Contact",
+  "lokasi menu": {
+    "alamat": "Address",
+    "telepon": "Phone",
+    "email": "Email"
+  },
+  "detail lokasi": {
+    "alamat": "Jatirejo Village, Rt. 12/Rw. 02, Wonoasri District, Madiun Regency",
+    "telepon": "+62 857-8224-4135",
+    "email": "pamungkaslatifbudi@gmail.com"
+  },
+  "Media Sosial":"Social Media",
+  "kirim":"Submit",
+  "Umpan":{
+   "Nama Lengkap":"Full Name...", 
+   "Email":"Email..." ,
+   "Pesan":"Message..." 
   }
 }

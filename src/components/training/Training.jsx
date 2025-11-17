@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
 import { trainings } from '../../data/training';
+import { useTranslation } from 'react-i18next';
 
 const Training = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
-
+  const {t} = useTranslation()
+  const data = trainings()
 
   useEffect(() => {
     // console.log("Active index:", activeIndex);
@@ -14,10 +15,10 @@ const Training = () => {
 
   return (
     <Container id="training">
-      <h1>Training or Course</h1>
+      <h1>{t("trainning.title")}</h1>
       <ContentContainer>
         <Left>
-          {trainings.map((item, index) => (
+          {data.map((item, index) => (
             <LeftItem
               key={index}
               title={item.title}
@@ -28,7 +29,7 @@ const Training = () => {
           ))}
         </Left>
         <Right>
-          {trainings.map((item, index) => (
+          {data.map((item, index) => (
             <ImageItem
               key={index}
               img={item.img}

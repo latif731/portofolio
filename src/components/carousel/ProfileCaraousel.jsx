@@ -64,25 +64,315 @@ const ProfileCaraousel = ({ t, i18n }) => {
 };
 
 const SliderContainer = styled.div`
-  /* border: red 1px solid; */
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  color: white;
-  width: 45rem;
-  .slick-slide {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 40px;
-  }
-  .slick-dots li button:before {
+  /* laptop */
+  @media (max-width: 1920px) {
+    /* border: red 1px solid; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: white;
-    font-size: 12px;
+    width: 45rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 24px;
+    }
   }
-  .slick-prev:before,
-  .slick-next:before {
+
+  /* tablet */
+  @media (max-width: 835px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: white;
-    font-size: 24px;
+    width: 49rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 25px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 26px;
+    }
+    /* p {
+      font-size: 16px;
+    } */
+  }
+  /* tablet */
+  @media (max-width: 820px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 49rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 25px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 26px;
+    }
+    /* p {
+      font-size: 16px;
+    } */
+  }
+
+  /* tablet */
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 46rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 25px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 26px;
+    }
+    /* p {
+      font-size: 16px;
+    } */
+  }
+
+  /* mobile */
+  @media (max-width: 428px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 25.5rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 26px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 415px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 25.3rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 26px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 412px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 24rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 26px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 395px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 24rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 26px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 391px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 23.5rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 26px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 376px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 22.4rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 26px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 360px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 20.8rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 16px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 24px;
+    }
+    p {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 320px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 18.9rem;
+    .slick-slide {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .slick-dots li button:before {
+      color: white;
+      font-size: 12px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+      font-size: 24px;
+    }
+    p {
+      font-size: 10px;
+      text-align: center;
+    }
   }
 `;
 

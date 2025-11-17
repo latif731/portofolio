@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import CertificateCard from '../card/CertificateCard';
 import { sertifikatData } from '../../data/certificate';
 import DetailCertificate from './DetailCertificate';
+import { useTranslation } from 'react-i18next';
 
 
 var settings = {
@@ -52,7 +53,7 @@ var settings = {
 const Certificate = () => {
   const [data, setData] = useState()
   // console.log("data", data)
-
+  const {t} = useTranslation()
   const [openDetail, setOpenDetail]= useState(false)
   const [selectedDetail, setSelectedDetail] = useState(null)
   // console.log("selectedDetail", selectedDetail)
@@ -78,7 +79,7 @@ const Certificate = () => {
     ))
   return (
     <Container id="sertifikat">
-      <h1>Certicate</h1>
+      <h1>{t("sertifikat")}</h1>
     <ContentContainer>
       <Slider ref={arrowRef} {...settings}>
       {sliderProject}
