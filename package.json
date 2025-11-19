@@ -54,6 +54,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.7.0",
     "patch-package": "^8.0.1",
-    "vite": "^6.4.1"
+    "vite": "^6.4.1",
+    "vite-plugin-svgr": "^4.5.0"
   }
 }
