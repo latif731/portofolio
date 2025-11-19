@@ -36,11 +36,7 @@ const Minat = ({ t, i18n }) => {
             {t("tertarik.futsal")}
           </h1>
         </MinatSibling>
-        <div
-          style={{
-            position: "relative",
-          }}
-        >
+        <MinatSibling>
           {/* <video src={videoObj.url} loop muted id="autoplay"/> */}
           <video
             width="400"
@@ -66,14 +62,11 @@ const Minat = ({ t, i18n }) => {
           >
             {t("tertarik.game")}
           </h1>
-        </div>
+        </MinatSibling>
       </MinatChild>
-      <MinatChild
-      >
-        <MinatSibling
-        >
-          <video
-            width="400"
+      <MinatChild>
+        <MinatSibling>
+          <VideoPlayer
             controls
             autoPlay={true}
             muted
@@ -82,7 +75,7 @@ const Minat = ({ t, i18n }) => {
           >
             <source src={`${musik}`} type="video/mp4" />
             {/* <source src="mov_bbb.ogg" type="video/ogg"/>             */}
-          </video>
+          </VideoPlayer>
           <h1
             style={{
               position: "absolute",
@@ -96,8 +89,7 @@ const Minat = ({ t, i18n }) => {
             {t("tertarik.musik")}
           </h1>
         </MinatSibling>
-        <MinatSibling
-        >
+        <MinatSibling>
           <video
             width="400"
             controls
@@ -123,10 +115,8 @@ const Minat = ({ t, i18n }) => {
           </h1>
         </MinatSibling>
       </MinatChild>
-      <MinatChild
-      >
-        <MinatSibling
-        >
+      <MinatChild>
+        <MinatSibling>
           <video
             width="400"
             controls
@@ -137,18 +127,7 @@ const Minat = ({ t, i18n }) => {
           >
             <source src={`${coding}`} type="video/mp4" />
           </video>
-          <h1
-            style={{
-              position: "absolute",
-              top: "10px",
-              left: "10px",
-              color: "white",
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              padding: "5px",
-            }}
-          >
-            {t("tertarik.coding")}
-          </h1>
+          <h1 style={{}}>{t("tertarik.coding")}</h1>
         </MinatSibling>
       </MinatChild>
     </MinatContainer>
@@ -158,15 +137,56 @@ const Minat = ({ t, i18n }) => {
 export default Minat;
 
 const MinatContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
+  @media (max-width: 1920px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
 `;
 
 const MinatChild = styled.div`
-  display: flex;
+  @media (max-width: 1920px) {
+    display: flex;
+  }
+  @media (max-width: 320px) {
+    display: flex;
+  }
 `;
 
 const MinatSibling = styled.div`
-  position: relative;
+  @media (max-width: 1920px) {
+    position: relative;
+    h1 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+    }
+  }
+  @media (max-width: 320px) {
+    position: relative;
+  }
+`;
+
+const VideoPlayer = styled.video`
+  width: 400px;
+  /* max-width: 400px; */
+  height: auto;
+  display: block;
+  border-radius: 10px; /* opsional */
+
+  @media (max-width: 480px) {
+    max-width: 300px;
+  }
+
+  @media (max-width: 360px) {
+    max-width: 250px;
+  }
 `;

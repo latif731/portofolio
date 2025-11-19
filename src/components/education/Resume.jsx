@@ -177,12 +177,11 @@ const Resume = () => {
         <ContentSidebar>
           {active === 1 && (
             <PersonContainer>
-              <h3>{t("profileTitle.profile title")}</h3>
+              <h3 className="main-title">{t("profileTitle.profile title")}</h3>
 
               <Banner backgroundImage={`${KTpolos}`}>
-                <h3>
+                <h3 className="second-title">
                   {t("profileTitle.province")}
-                  <br />
                   <br />
                   {t("profileTitle.kabupaten")}
                 </h3>
@@ -216,14 +215,7 @@ const Resume = () => {
                         >
                           {t(labelKey)}
                         </h4>
-                        <span
-                          style={{
-                            color: "black",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          :
-                        </span>
+                        <span>:</span>
                       </PersonContentSibling>
 
                       <h4>{t(valueKey)}</h4>
@@ -266,7 +258,7 @@ const Resume = () => {
                       <Dot1></Dot1>
                       <ContentPendidikanTitle>
                         <h4>{t("education.education3")}</h4>
-                        <p>
+                        <p className="jurusan">
                           {t("education.jurusan")} :{" "}
                           {t("education.namajurusan")}
                         </p>
@@ -282,7 +274,7 @@ const Resume = () => {
           )}
           {active === 3 && (
             <Skill>
-              <h3>{t("skill.skillTitle")}</h3>
+              <h3 className="skill-title">{t("skill.skillTitle")}</h3>
               <SkillBox>
                 <SkillContainer>
                   <SoftSkill>
@@ -300,14 +292,7 @@ const Resume = () => {
                       <p>{t("skill.mampuBekerja")}</p>
                     </SoftSkillFlex>
                     <SoftSkillFlex>
-                      <Dot2
-                        style={{
-                          width: "7px",
-                          height: "7px",
-                          backgroundColor: "white",
-                          borderRadius: "10px",
-                        }}
-                      ></Dot2>
+                      <Dot2></Dot2>
                       <p>{t("skill.komunikasi")}</p>
                     </SoftSkillFlex>
                     <SoftSkillFlex>
@@ -353,7 +338,7 @@ const Resume = () => {
           {active === 4 && (
             <MinatContainer>
               <TitleMinat>
-                <h3>{t("tertarik.title")}</h3>
+                <h3 className="minat-title">{t("tertarik.title")}</h3>
               </TitleMinat>
               <Minat t={t} i18n={i18n} />
             </MinatContainer>
@@ -380,15 +365,12 @@ const Container = styled.div`
     padding-bottom: 100px;
   }
 
-
-
   @media (max-width: 428px) {
     width: 100%;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
     // margin-right  : 1rem;
   }
-
 
   @media (max-width: 415px) {
     width: 100%;
@@ -507,6 +489,12 @@ const ContentContainer = styled.div`
     display: flex;
   }
 
+  @media (max-width: 428px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   @media (max-width: 415px) {
     display: flex;
     flex-direction: column;
@@ -550,6 +538,8 @@ const ContentContainer = styled.div`
   }
 `;
 
+// BAGIAN NAVBAR
+
 const Sidebars = styled.div`
   @media (max-width: 1920px) {
     display: flex;
@@ -565,7 +555,7 @@ const Sidebars = styled.div`
     flex-shrink: 0;
   }
 
-  @media (max-width: 428px) and (min-width: 416px)  {
+  @media (max-width: 428px) and (min-width: 415px) {
     display: flex;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -577,7 +567,7 @@ const Sidebars = styled.div`
     border-radius: 10px;
   }
 
-  @media (max-width: 415px) and (min-width: 413px)  {
+  @media (max-width: 415px) and (min-width: 413px) {
     display: flex;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -589,7 +579,7 @@ const Sidebars = styled.div`
     border-radius: 10px;
   }
 
-  @media (max-width: 412px) and (min-width: 396px)  {
+  @media (max-width: 412px) and (min-width: 396px) {
     display: flex;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -601,7 +591,7 @@ const Sidebars = styled.div`
     border-radius: 10px;
   }
 
-  @media (max-width: 395px) and (min-width: 392px)  {
+  @media (max-width: 395px) and (min-width: 392px) {
     display: flex;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -613,7 +603,7 @@ const Sidebars = styled.div`
     border-radius: 10px;
   }
 
-  @media (max-width: 391px) and (min-width: 377px)  {
+  @media (max-width: 391px) and (min-width: 377px) {
     display: flex;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -625,7 +615,7 @@ const Sidebars = styled.div`
     border-radius: 10px;
   }
 
-  @media (max-width: 376px) and (min-width: 361px)  {
+  @media (max-width: 376px) and (min-width: 361px) {
     display: flex;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -637,7 +627,7 @@ const Sidebars = styled.div`
     border-radius: 10px;
   }
 
-  @media (max-width: 360px) and (min-width: 321px)  {
+  @media (max-width: 360px) and (min-width: 321px) {
     display: flex;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -648,7 +638,7 @@ const Sidebars = styled.div`
     // margin-right: 2rem;
     border-radius: 10px;
   }
-  
+
   @media (max-width: 320px) {
     display: flex;
     padding-left: 1rem;
@@ -667,6 +657,16 @@ const SidebarContent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  @media (max-width: 428px) {
+    max-width: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    /* max-width: 300px; */
+    margin: 0 auto;
   }
 
   @media (max-width: 415px) {
@@ -1326,24 +1326,55 @@ const MinatkuIcon = styled.div`
 `;
 
 const ContentSidebar = styled.div`
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-  padding: 2rem;
-  width: 70%;
-  height: 20rem;
-  overflow-y: auto;
-  margin-left: 0.5rem;
-  &::-webkit-scrollbar {
-    width: 8px; /* Lebar scrollbar */
+  @media (max-width: 1920px) {
+    background: linear-gradient(
+      159deg,
+      rgb(45, 45, 58) 0%,
+      rgb(43, 43, 53) 100%
+    );
+    padding: 2rem;
+    width: 70%;
+    height: 20rem;
+    overflow-y: auto;
+    margin-left: 0.5rem;
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgb a(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
   }
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
-    border-radius: 4px; /* Radius sudut */
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
-  }
-  &::-webkit-scrollbar-track {
-    background-color: rgb a(0, 0, 0, 0.1); /* Warna track scrollbar */
+  @media (max-width: 320px) {
+    background: linear-gradient(
+      159deg,
+      rgb(45, 45, 58) 0%,
+      rgb(43, 43, 53) 100%
+    );
+    padding: 1rem;
+    width: 99%;
+    height: 20rem;
+    overflow-y: auto;
+    margin-left: 0.1rem;
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgb a(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
   }
 `;
 const Icon = styled.div`
@@ -1353,213 +1384,538 @@ const Icon = styled.div`
   gap: 2rem;
 `;
 
-const PersonContainer = styled.div``;
+// BAGIAN DATA DIRI
+
+const PersonContainer = styled.div`
+  @media (max-width: 320px) {
+    .main-title {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+`;
 
 const Banner = styled.div`
-  background-image: url(${(props) => props.backgroundImage});
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(${(props) => props.backgroundImage});
-  background-size: cover;
-  background-position: center;
-  height: 600px; /* Sesuaikan sesuai kebutuhan */
-  width: 100%; /* Sesuaikan sesuai kebutuhan */
-  margin-top: 20px; /* Tambahkan margin jika diperlukan */
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  h3 {
-    font-family: hacker;
-    color: black;
-    text-align: center;
-    padding-bottom: 2rem;
+  @media (max-width: 1920px) {
+    background-image: url(${(props) => props.backgroundImage});
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url(${(props) => props.backgroundImage});
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Sesuaikan sesuai kebutuhan */
+    width: 100%; /* Sesuaikan sesuai kebutuhan */
+    margin-top: 20px; /* Tambahkan margin jika diperlukan */
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    h3 {
+      font-family: hacker;
+      color: black;
+      text-align: center;
+      padding-bottom: 2rem;
+      line-height: 2;
+    }
+  }
+  @media (max-width: 320px) {
+    background-image: url(${(props) => props.backgroundImage});
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url(${(props) => props.backgroundImage});
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Sesuaikan sesuai kebutuhan */
+    width: 100%; /* Sesuaikan sesuai kebutuhan */
+    margin-top: 20px; /* Tambahkan margin jika diperlukan */
+    /* padding: 1px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    /* margin-bottom: ; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.1px; */
+    /* h3 {
+      font-family: hacker;
+      color: black;
+      text-align: center;
+      padding-bottom: 2rem;
+    } */
+    .second-title {
+      font-size: 10px;
+      color: black;
+      text-align: center;
+      line-height: 1.5;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      /* padding-bottom: 1rem; */
+    }
   }
 `;
 
 const PersonContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  max-width: 700px;
-  margin: 0 auto;
+  @media (max-width: 1920px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-width: 100%;
+    /* height: 120px; */
+    /* padding-bottom: 100px; */
+    /* margin: 0px  auto; */
+    /* margin-bottom: 100rem; */
+  }
 `;
 
 const PersonContentChild = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  background: ${(props) => (props ? "rgba(255,255,255,0.2)" : "transparent")};
-  padding: 0.3rem 0.5rem;
-  border-radius: 8px;
-  h4 {
-    color: black;
-    font-weight: 600;
-    text-align: right;
-    flex: 1;
-    word-break: break-word;
+  @media (max-width: 1920px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: ${(props) => (props ? "rgba(255,255,255,0.2)" : "transparent")};
+    padding: 0.3rem 0.5rem;
+    border-radius: 8px;
+    h4 {
+      color: black;
+      font-weight: 600;
+      text-align: right;
+      flex: 1;
+      word-break: break-word;
+    }
+  }
+
+  @media (max-width: 320px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: ${(props) => (props ? "rgba(255,255,255,0.2)" : "transparent")};
+    padding: 0.1rem 0.3rem;
+    border-radius: 8px;
+    gap: 3px;
+    h4 {
+      color: black;
+      font-weight: 600;
+      text-align: start;
+      flex: 1;
+      /* word-break: break-word; */
+      font-size: 7px;
+    }
   }
 `;
 
 const PersonContentSibling = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  min-width: 180px;
+  @media (max-width: 1920px) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 180px;
+    span {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: 320px) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 100px;
+    span {
+      color: black;
+      font-weight: bold;
+      font-size: 5px;
+    }
+  }
 `;
 
-const PendidikanContainer = styled.div``;
+// BAGIAN PENDIDIKAN
+
+const PendidikanContainer = styled.div`
+  @media (max-width: 320px) {
+    max-width: 100%;
+    h3 {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+`;
 
 const ContentPendidikan = styled.div`
-  padding: 2rem;
+  @media (max-width: 1920px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media (max-width: 320px) {
+    padding: 1px;
+  }
 `;
 
 const ContentPendidikanChild = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
+  @media (max-width: 1920px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
 `;
 
 const ContentPendidikanSibling = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
+  @media (max-width: 1920px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding-top: 30px;
+  }
 `;
 
 const PendidikanFlex = styled.div`
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-`;
-
-const ContentPendidikanTitle = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const ContentTahunPendidikan1 = styled.div`
-  padding-left: 17rem;
-  p {
-    background-color: red;
-    padding: 10px;
-    border-radius: 20px;
+  @media (max-width: 1920px) {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
   }
-`;
-const ContentTahunPendidikan2 = styled.div`
-  padding-left: 15.2rem;
-  p {
-    background-color: red;
-    padding-top: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 10px;
-    border-radius: 20px;
-  }
-`;
-
-const ContentTahunPendidikan3 = styled.div`
-  padding-left: 16.2rem;
-  p {
-    background-color: red;
-    padding-top: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-bottom: 10px;
-    border-radius: 20px;
+  @media (max-width: 320px) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 `;
 
 const Dot1 = styled.div`
-  width: 15px;
-  height: 15px;
-  background-color: red;
-  border-radius: 20px;
+  @media (max-width: 1920px) {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 20px;
+  }
+  @media (max-width: 320px) {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 10px;
+  }
 `;
 
+const ContentPendidikanTitle = styled.div`
+  @media (max-width: 1920px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    h4 {
+      font-size: 9px;
+      /* width: 100px; */
+    }
+    .jurusan {
+      font-size: 8px;
+    }
+  }
+`;
+
+const ContentTahunPendidikan1 = styled.div`
+  @media (max-width: 1920px) {
+    padding-left: 17rem;
+    p {
+      background-color: red;
+      padding: 10px;
+      border-radius: 20px;
+    }
+  }
+  @media (max-width: 320px) {
+    padding-left: 1px;
+    p {
+      background-color: red;
+      padding: 6px;
+      border-radius: 10px;
+      font-size: 8.5px;
+    }
+  }
+`;
+const ContentTahunPendidikan2 = styled.div`
+  @media (max-width: 1920px) {
+    padding-left: 15.2rem;
+    p {
+      background-color: red;
+      padding-top: 10px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    padding-left: 1px;
+    p {
+      background-color: red;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 8px;
+      padding-right: 10px;
+      border-radius: 10px;
+      font-size: 8.5px;
+    }
+  }
+`;
+
+const ContentTahunPendidikan3 = styled.div`
+  @media (max-width: 1920px) {
+    padding-left: 16.2rem;
+    p {
+      background-color: red;
+      padding-top: 10px;
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+    }
+  }
+  @media (max-width: 320px) {
+    padding-left: 1px;
+    p {
+      background-color: red;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 10px;
+      font-size: 8.5px;
+    }
+  }
+`;
+
+// BAGIAN KEMAMPUAN ATAU SKILL
+
 const Skill = styled.div`
-  color: white;
+  @media (max-width: 1920px) {
+    color: white;
+  }
+  @media (max-width: 320px) {
+    .skill-title {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
 `;
 const SkillBox = styled.div`
-  position: relative;
-  margin-top: 1rem;
+  @media (max-width: 1920px) {
+    position: relative;
+    margin-top: 1rem;
+  }
+  @media (max-width: 320px) {
+    position: relative;
+    margin-top: 1rem;
+  }
 `;
 
 const SkillContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  margin: 2rem 0;
+  @media (max-width: 1920px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin: 2rem 0;
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    margin: 2rem 0;
+  }
 `;
 
 const SoftSkill = styled.div`
-  flex: 1;
-  text-align: left;
-  padding: 1rem;
-  border-left: white 1px solid;
-  border-right: white 1px solid;
-  border-top: white 1px solid;
-  border-bottom: white 1px solid;
-  h4 {
-    text-align: center;
-    border-bottom: white 1px solid;
-    border-right: white 1px solid;
+  @media (max-width: 1920px) {
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
     border-left: white 1px solid;
+    border-right: white 1px solid;
     border-top: white 1px solid;
-    width: 24rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    border-bottom: white 1px solid;
+    h4 {
+      text-align: center;
+      border-bottom: white 1px solid;
+      border-right: white 1px solid;
+      border-left: white 1px solid;
+      border-top: white 1px solid;
+      width: 24rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
+    width: 99%;
+    /* margin-left: 10rem; */
+    border-left: white 1px solid;
+    border-right: white 1px solid;
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
+    h4 {
+      text-align: center;
+      border-bottom: white 1px solid;
+      border-right: white 1px solid;
+      border-left: white 1px solid;
+      border-top: white 1px solid;
+      width: 99%;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 12px;
+    }
   }
 `;
 
 const SoftSkillFlex = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-top: 1rem;
-`;
+  @media (max-width: 1920px) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
 
-const HardSkillFlex = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-top: 1rem;
-`;
-
-const Dot2 = styled.div`
-  width: 7px;
-  height: 7px;
-  background-color: white;
-  border-radius: 10px;
-`;
-
-const HardSkill = styled.div`
-  text-align: center;
-  flex: 1;
-  text-align: center;
-  height: 21rem;
-  padding: 1rem;
-  border-right: white 1px solid;
-  border-top: white 1px solid;
-  border-bottom: white 1px solid;
-  h4 {
-    text-align: center;
-    border-bottom: white 1px solid;
-    border-right: white 1px solid;
-    border-left: white 1px solid;
-    border-top: white 1px solid;
-    width: 24rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  @media (max-width: 320px) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    p {
+      font-size: 10px;
+    }
   }
 `;
 
-const MinatContainer = styled.div``;
+const HardSkillFlex = styled.div`
+  @media (max-width: 1920px) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
 
-const TitleMinat = styled.div``;
+  @media (max-width: 320px) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    p {
+      font-size: 10px;
+    }
+  }
+`;
 
+const Dot2 = styled.div`
+  @media (max-width: 1920px) {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  @media (max-width: 320px) {
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+  }
+`;
+
+const HardSkill = styled.div`
+  @media (max-width: 1920px) {
+    text-align: center;
+    flex: 1;
+    text-align: center;
+    height: 19.78rem;
+    padding: 1rem;
+    border-right: white 1px solid;
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
+    h4 {
+      text-align: center;
+      border-bottom: white 1px solid;
+      border-right: white 1px solid;
+      border-left: white 1px solid;
+      border-top: white 1px solid;
+      width: 24rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    text-align: center;
+    flex: 1;
+    text-align: center;
+    height: 21rem;
+    padding: 1rem;
+    width: 99%;
+    border-right: white 1px solid;
+    border-left: white 1px solid;
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
+    h4 {
+      text-align: center;
+      border-bottom: white 1px solid;
+      border-right: white 1px solid;
+      border-left: white 1px solid;
+      border-top: white 1px solid;
+      width: 99%;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 12px;
+    }
+  }
+`;
+
+// BAGIAN MINAT
+const MinatContainer = styled.div`
+  @media (max-width: 320px) {
+    width: 100%;
+  }
+`;
+
+const TitleMinat = styled.div`
+  @media (max-width: 320px) {
+    .minat-title {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+`;
+
+// LINK NAVBAR
 const ActiveLink = styled.div`
   @media (max-width: 1920px) {
     color: ${(props) => (props.active ? "#00e0ff" : "#fff")};
@@ -1583,7 +1939,7 @@ const HobbyIcon = styled(Hobby)`
       stroke: currentColor;
     }
   }
-  
+
   @media (max-width: 391px) {
     width: 40px;
     height: 40px;
