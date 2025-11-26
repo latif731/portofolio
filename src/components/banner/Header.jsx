@@ -194,6 +194,18 @@ const Container = styled.div`
   }
 
   /* HP besar */
+
+  @media (max-width: 720px) {
+  /* untuk layar kecil / sangat rendah resolusi */
+}
+
+@media (min-width: 721px) and (max-width: 1080px) {
+  /* untuk sebagian besar ponsel Oppo FHD+ (1080 × 2400) */
+}
+
+@media (min-width: 1081px) {
+  /* untuk layar besar / high-res (QHD atau foldable) */
+}
   @media (max-width: 640px) {
     /* padding-left: 1rem; */
     /* padding-right: 1rem; */

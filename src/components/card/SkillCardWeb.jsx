@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Circular from "../circular/Circular";
+import CircularWeb from "../circular/CircularWeb";
 import styled from "styled-components";
 
-const SkillCard = ({ data, isVisible }) => {
+const SkillCardWeb = ({ data, isVisible }) => {
   // console.log("skill card", isVisible)
   const [percent, setPercent] = useState(0);
 
@@ -43,7 +44,8 @@ const SkillCard = ({ data, isVisible }) => {
 
   return (
     <Container>
-      <Circular data={data} isVisible={isVisible} />
+      {/* <Circular data={data} isVisible={isVisible} /> */}
+      <CircularWeb data={data} isVisible={isVisible} />
       <Content>
         <Percent>
           <h4>{percent} %</h4>
@@ -56,7 +58,7 @@ const SkillCard = ({ data, isVisible }) => {
   );
 };
 
-export default SkillCard;
+export default SkillCardWeb;
 
 const Container = styled.div`
   @media (max-width: 1920px) {
@@ -80,22 +82,21 @@ const Container = styled.div`
       rgb(43, 43, 53) 100%
     );
   }
-  @media (max-width: 320px) {
+  @media (max-width: 1115px) {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    justify-content: center; 
+    justify-content: center;
     /* margin */
-     border-radius: 2rem;
+    border-radius: 2rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-      -6px -6px 10px -1px rgba(255, 255, 255, 0.2); 
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.2);
     /* border: 1px solid red; */
     /* padding: 2rem 5rem 2rem 5rem; */
     width: 15rem;
-    height:15rem;
-    margin-left: 1.5rem;
+    height: 15rem;
     background: linear-gradient(
       159deg,
       rgb(45, 45, 58) 0%,
@@ -116,13 +117,12 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
 }
-@media (max-width:320px) {
+@media (max-width:1115px) {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
-  /* display: none; */
+  font-size: 15px
 }
 `;
