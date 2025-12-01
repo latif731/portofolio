@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import SkillCard from "../card/SkillCard";
 import SkillCardMobile from "../card/SkillCardMobile";
 import SkillCardTablet from "../card/SkillCardTablet";
-import Carousel from "react-grid-carousel";
 import "./programskill.css";
 import { programmerData } from "../../data/programmer";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
