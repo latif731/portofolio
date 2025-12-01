@@ -54,6 +54,7 @@ const FigmaDetailCard = ({ setOpenFigmaDetail,selectedFigmaDetail }) => {
 export default FigmaDetailCard;
 
 const Container = styled.div`
+@media (max-width:1920px) {
   position: fixed;
   top: 0;
   left: 0;
@@ -69,9 +70,11 @@ const Container = styled.div`
   // paddingTop: "3rem",
   z-index: 999;
   // position:"relative"
+}
 `;
 
 const ContentWrapper = styled.div`
+@media (max-width:1920px) {
   width: 900px;
   height: 650px;
   background-color: #191923;
@@ -92,18 +95,23 @@ const ContentWrapper = styled.div`
   &::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
   }
+}
 `;
 
 const ContentDetail = styled.div``;
 
 const Title = styled.div`
+@media (max-width:1920px) {
   text-align: center;
+}
 `;
 
 const TitleHeader = styled.div``;
 
 const Content = styled.div`
+@media (max-width:1920px) {
   padding: 2rem;
+}
 `;
 
 const MainContent = styled.div`
@@ -114,9 +122,11 @@ const MainContent = styled.div`
 `;
 
 const Cross = styled.div`
+@media (max-width:1920px) {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 2rem;
+}
 `;
 
 const ContentVideo = styled.div`
@@ -125,15 +135,18 @@ const ContentVideo = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
+@media (max-width:1920px) {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
 `;
 
 
 const Button = styled.button`
+@media (max-width:1920px) {
   background-color: #333;
   color: white;
   border: none;
@@ -143,4 +156,5 @@ const Button = styled.button`
   &:hover {
     background-color: #555;
   }
+}
 `;

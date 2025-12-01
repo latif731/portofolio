@@ -155,72 +155,41 @@ const Header = () => {
 export default Header;
 
 const Container = styled.div`
-  position: fixed;
-  width: ${({ navbar }) => (navbar ? "100%" : "100%")};
-  display: flex;
-  z-index: 150;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  /* padding-left: 9rem; */
-  padding-right: 1rem;
-  transition: 0.6s;
-  align-items: center;
-  background: ${({ navbar }) =>
-    navbar
-      ? "black"
-      : `linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%)`};
-  justify-content: space-between;
-  /* Desktop besar */
-  @media (max-width: 1536px) {
-    /* padding-left: 7rem; */
-  }
-
-  /* Laptop besar */
-  @media (max-width: 1280px) {
-    /* padding-left: 4rem; */
-  }
-
-  /* Laptop kecil / Tablet Landscape */
-  @media (max-width: 1024px) {
-    /* padding-left: 2rem; */
-    /* padding-right: 1rem; */
-  }
-
-  /* Tablet */
-  @media (max-width: 768px) {
-    width: 100%;
-    padding-left: 1rem;
+  @media (max-width: 1920px) {
+    position: fixed;
+    width: ${({ navbar }) => (navbar ? "100%" : "100%")};
+    display: flex;
+    z-index: 150;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* padding-left: 9rem; */
     padding-right: 1rem;
+    transition: 0.6s;
+    align-items: center;
+    background: ${({ navbar }) =>
+      navbar
+        ? "black"
+        : `linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%)`};
+    justify-content: space-between;
   }
 
-  /* HP besar */
-
-  @media (max-width: 720px) {
-  /* untuk layar kecil / sangat rendah resolusi */
-}
-
-@media (min-width: 721px) and (max-width: 1080px) {
-  /* untuk sebagian besar ponsel Oppo FHD+ (1080 × 2400) */
-}
-
-@media (min-width: 1081px) {
-  /* untuk layar besar / high-res (QHD atau foldable) */
-}
-  @media (max-width: 640px) {
-    /* padding-left: 1rem; */
-    /* padding-right: 1rem; */
-  }
-
-  /* HP kecil (iPhone SE) */
-  /* @media (max-width: 480px) {
-    padding-left: 0rem;
-    padding-right: 1rem;
-    width: 30rem;
-    position:fixed;
-  } */
   /* paling aman untuk semua HP */
-  @media (max-width: 430px) {
-    width: 100%;
+  @media (max-width: 320px) {
+    position: fixed;
+    width: ${({ navbar }) => (navbar ? "100%" : "100%")};
+    display: flex;
+    z-index: 150;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* padding-left: 9rem; */
+    padding-right: 1rem;
+    transition: 0.6s;
+    align-items: center;
+    background: ${({ navbar }) =>
+      navbar
+        ? "black"
+        : `linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%)`};
+    justify-content: space-between;
   }
 `;
 const Logo = styled.div`
@@ -272,8 +241,8 @@ const Title = styled.div`
     font-size: 12px;
   }
 
-  @media (max-width:800px) {
-    font-size: 17px
+  @media (max-width: 800px) {
+    font-size: 17px;
   }
 
   @media (max-width: 768px) {
@@ -293,7 +262,7 @@ const Title = styled.div`
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 
-  @media(max-width: 320px) {
+  @media (max-width: 320px) {
     font-size: 10px;
   }
 `;
@@ -468,11 +437,10 @@ const DropdownButton = styled.div`
     background: rgba(255, 255, 255, 0.1);
   }
 
-  @media (max-width:1920px){
+  @media (max-width: 1920px) {
     font-size: 15px;
     padding: 2px 6px;
   }
-
 
   @media (max-width: 1120px) {
     font-size: 15px;
