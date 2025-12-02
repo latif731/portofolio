@@ -271,45 +271,51 @@ const Title = styled.div`
   /* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     h1 {
-      font-size: 19px;
+      font-size: 25px;
       text-align: center;
     }
   }
 
+  @media (max-width: 415px) {
+    h1 {
+      font-size: 25px;
+      text-align: center;
+    }
+  }
   @media (max-width: 412px) {
     h1 {
-      font-size: 19px;
+      font-size: 25px;
       text-align: center;
     }
   }
 
   @media (max-width: 395px) {
     h1 {
-      font-size: 19px;
+      font-size: 25px;
       text-align: center;
     }
   }
   @media (max-width: 391px) {
     h1 {
-      font-size: 19px;
+      font-size: 25px;
       text-align: center;
     }
   }
   @media (max-width: 376px) {
     h1 {
-      font-size: 19px;
+      font-size: 25px;
       text-align: center;
     }
   }
   @media (max-width: 360px) {
     h1 {
-      font-size: 17px;
+      font-size: 25px;
       text-align: center;
     }
   }
   @media (max-width: 320px) {
     h1 {
-      font-size: 15px;
+      font-size: 20px;
       text-align: center;
     }
   }

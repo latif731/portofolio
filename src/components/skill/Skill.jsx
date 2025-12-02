@@ -212,8 +212,9 @@ const Title = styled.div`
     text-align: center;
   }
   @media (max-width: 320px) {
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     text-align: center;
+    font-size: 11px;
   }
 `;
 
@@ -464,7 +465,7 @@ const Pilihan = styled.div`
     margin-bottom: 5rem;
 
     button {
-      font-size: 12px;
+      font-size: 10px;
       margin-top: 1rem;
       width: 100px;
       height: 50px;

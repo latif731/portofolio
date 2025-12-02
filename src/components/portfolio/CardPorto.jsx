@@ -47,6 +47,7 @@ const MobilePorto = styled.div`
   /* Mobile only */
   @media (min-width: 320px) and (max-width: 599px) {
     display: block;
+    margin: 0;
   }
 
   @media (min-width: 601px) {
