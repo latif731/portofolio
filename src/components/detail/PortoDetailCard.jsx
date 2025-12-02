@@ -7,7 +7,7 @@ const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
   const handleDetailOpen = () => {
     setOpenPortoDetail(false);
   };
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <Container>
       <ContentWrapper>
@@ -15,11 +15,7 @@ const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
           <RxCross1 color="white" />
         </Cross>
         <TitleHeader>
-          <h1
-            style={{
-              color: "white",
-            }}
-          >
+          <h1>
             {/* My Detail Project */}
             {t("portofolio.title4")}
           </h1>
@@ -30,55 +26,50 @@ const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
           </Title>
           <MainContent>
             {/* <h4>type : {selectedPortoDetail.type}</h4> */}
-            <h4>{t("porto menu.type")} : {selectedPortoDetail.type}</h4>
+            <Type>
+              <h4>
+                {t("porto menu.type")} : {selectedPortoDetail.type}
+              </h4>
+            </Type>
 
             {/* <video src={videoObj.url} loop muted id="autoplay"/> */}
-            <div>
+            <ChildContent>
               {/* <h4>Desc :</h4> */}
               <h4>{t("porto menu.desc")} :</h4>
               <p
-              style={{
-                whiteSpace:"pre-wrap"
-              }}
-              >{selectedPortoDetail.detail_description}</p>
-            </div>
-            <div
-              style={{
-                width: "100%",
-              }}
-            >
+                style={{
+                  whiteSpace: "pre-wrap",
+                }}
+              >
+                {selectedPortoDetail.detail_description}
+              </p>
+            </ChildContent>
+            <ToolContainer>
               {/* <h4>Tools/Library/Framework :</h4> */}
               <h4>{t("porto menu.tool")}:</h4>
-              <div
-                style={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: "1rem",
-                  paddingTop: "2rem",
-                  alignItems: "center",
-                  // width:"100%"
-                }}
-              >
+              <ToolContent>
                 {selectedPortoDetail.tools.map((tool, index) => (
-                  <img key={index} src={tool.item} alt="" width={"100px"} />
+                  <img key={index} src={tool.item} alt="" />
                 ))}
-              </div>
-            </div>
-            <div>
-              <div>
+              </ToolContent>
+            </ToolContainer>
+            <LinkContainer>
+              <LinkTitle>
                 {/* <h4>Link To Show Case:</h4> */}
                 <h4>{t("porto menu.link")}:</h4>
-              </div>
-              <a
-                href={selectedPortoDetail.link}
-                style={{
-                  textDecoration: "none",
-                  color: "white",
-                }}
-              >
-                {selectedPortoDetail.link}
-              </a>
-            </div>
+              </LinkTitle>
+              <LinkContent>
+                <a
+                  href={selectedPortoDetail.link}
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                  }}
+                >
+                  {selectedPortoDetail.link}
+                </a>
+              </LinkContent>
+            </LinkContainer>
           </MainContent>
         </Content>
       </ContentWrapper>
@@ -89,141 +80,217 @@ const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
 export default PortoDetailCard;
 
 const Container = styled.div`
-@media (max-width:1920px) {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 1550px;
-  height: 1024px;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  // gap:"2rem",
-  padding-left: 20rem;
-  padding-top: 2rem;
-  // justifyContent: "center",
-  // alignItems: "center",
-  // paddingTop: "3rem",
-  z-index: 999;
-  // position:"relative"
-}
+  @media (max-width: 1920px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1550px;
+    height: 1024px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    // gap:"2rem",
+    padding-left: 20rem;
+    padding-top: 2rem;
+    // justifyContent: "center",
+    // alignItems: "center",
+    // paddingTop: "3rem",
+    z-index: 999;
+    // position:"relative"
+  }
 
-@media (max-width:320px) {
-  position: fixed;
-  top: 0px;
-  left: -310px;
-  width: 620px;
-  height: 102px;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  // gap:"2rem",
-  padding-left: 20rem;
-  padding-top: 2rem;
-  // justifyContent: "center",
-  // alignItems: "center",
-  // paddingTop: "3rem",
-  z-index: 999;
-  // position:"relative"
-}
+  @media (max-width: 320px) {
+    position: fixed;
+    top: 0px;
+    left: -310px;
+    width: 620px;
+    height: 102px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    // gap:"2rem",
+    padding-left: 20rem;
+    padding-top: 2rem;
+    // justifyContent: "center",
+    // alignItems: "center",
+    // paddingTop: "3rem",
+    z-index: 999;
+    // position:"relative"
+  }
 `;
 
 const ContentWrapper = styled.div`
-@media (max-width:1920px) {
-  width: 900px;
-  height: 650px;
-  background-color: #191923;
-  padding: 3rem;
-  border-radius: 2%;
-  overflow-y: auto;
-  box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
-  &::-webkit-scrollbar {
-    width: 8px; /* Lebar scrollbar */
+  @media (max-width: 1920px) {
+    width: 900px;
+    height: 650px;
+    background-color: #191923;
+    padding: 3rem;
+    border-radius: 2%;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
   }
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
-    border-radius: 4px; /* Radius sudut */
+  @media (max-width: 320px) {
+    width: 1000px;
+    height: 490px;
+    background-color: #191923;
+    padding: 1rem;
+    border-radius: 2%;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
   }
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
-  }
-  &::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
-  }
-}
-@media (max-width:320px) {
-  width: 900px;
-  height: 650px;
-  background-color: #191923;
-  padding: 3rem;
-  border-radius: 2%;
-  overflow-y: auto;
-  box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
-  &::-webkit-scrollbar {
-    width: 8px; /* Lebar scrollbar */
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
-    border-radius: 4px; /* Radius sudut */
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
-  }
-  &::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
-  }
-}
 `;
 
 const ContentDetail = styled.div``;
 
 const Title = styled.div`
-@media (max-width:1920px) {
-  text-align: center;
-}
-@media (max-width:320px) {
-  text-align: center;
-}
+  @media (max-width: 1920px) {
+    text-align: center;
+  }
+  @media (max-width: 320px) {
+    text-align: center;
+    h2 {
+      font-size: 16.5px;
+    }
+  }
 `;
 
-const TitleHeader = styled.div``;
+const TitleHeader = styled.div`
+  @media (max-width: 320px) {
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 20.5px;
+    }
+  }
+`;
 
 const Content = styled.div`
-@media (max-width:1920px) {
-  padding: 2rem;
-}
-@media (max-width:320px) {
-  padding: 2rem;
-}
+  @media (max-width: 1920px) {
+    padding: 2rem;
+  }
+  @media (max-width: 320px) {
+    padding: 2rem;
+  }
 `;
 
 const MainContent = styled.div`
-@media (max-width:1920px) {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding-top: 2rem;
-}
+  @media (max-width: 1920px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+`;
+
+const Type = styled.div`
 @media (max-width:320px) {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding-top: 2rem;
+  h4 {
+    font-size: 10px;
+  }
 }
 `;
 
 const Cross = styled.div`
-@media (max-width:1920px) {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 2rem;
-}
-@media (max-width:320px) {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 2rem;
-}
+  @media (max-width: 1920px) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
 `;
 
 const ContentVideo = styled.div`
   display: flex;
   justify-content: center;
 `;
+
+const ChildContent = styled.div`
+  @media (max-width: 320px) {
+    h4 {
+      font-size: 10px;
+    }
+    p {
+      font-size: 7.7px;
+    }
+  }
+`;
+
+const ToolContainer = styled.div`
+  @media (max-width: 320px) {
+    width: 100%;
+    font-size: 10px;
+  }
+`;
+
+const ToolContent = styled.div`
+  @media (max-width: 1920px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+    align-items: center;
+    img {
+      width: 100px;
+    }
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+    align-items: center;
+    img {
+      width: 30px;
+    }
+  }
+`;
+
+const LinkContainer = styled.div``
+
+const LinkTitle = styled.div`
+  @media (max-width:320px) {
+    font-size: 10px;
+  }
+`
+
+const LinkContent = styled.div`
+  @media (max-width:320px) {
+    a{
+      font-size: 9px;
+    }
+  }
+`
