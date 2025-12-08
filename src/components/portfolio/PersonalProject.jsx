@@ -94,6 +94,22 @@ const Container = styled.div`
     margin: 0 auto;
     padding-bottom: 100px;
   }
+  @media (max-width: 376px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    gap: 2rem;
+    width: 90%;
+    /* max-width: 1280px; */
+    margin-left: 11px;
+    /* padding-bottom: 100px; */
+    h1 {
+      text-align: center;
+      font-size: 25px;
+    }
+  }
   @media (max-width: 360px) {
     display: flex;
     flex-direction: column;
@@ -104,7 +120,7 @@ const Container = styled.div`
     width: 90%;
     /* max-width: 1280px; */
     margin-left: 11px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     h1 {
       text-align: center;
       font-size: 25px;
