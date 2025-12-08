@@ -135,6 +135,6 @@ const BoxMobile = styled.div`
 const SliderContainer = styled.div`
   @media (max-width:320px) {
     width: 105%;
-    margin: 0px;
+    margin: -2.5px;
   }
 `

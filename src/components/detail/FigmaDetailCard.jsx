@@ -42,7 +42,10 @@ const FigmaDetailCard = ({ setOpenFigmaDetail,selectedFigmaDetail }) => {
         </ButtonWrapper>
         <TransformWrapper initialScale={1} initialPositionX={200} initialPositionY={100}>
             <TransformComponent>
-              <img src={selectedImage.img} alt={selectedImage.title} width={"750px"} />
+              <img 
+              src={selectedImage.img} 
+              alt={selectedImage.title} 
+              width={""} />
             </TransformComponent>
           </TransformWrapper>
         </Content>
@@ -71,6 +74,23 @@ const Container = styled.div`
   z-index: 999;
   // position:"relative"
 }
+  @media (max-width: 320px) {
+    position: fixed;
+    top: 0px;
+    left: -15px;
+    width: 620px;
+    height: 102px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    // gap:"2rem",
+    padding-left: 1rem;
+    padding-top: 2rem;
+    // justifyContent: "center",
+    // alignItems: "center",
+    // paddingTop: "3rem",
+    z-index: 999;
+    // position:"relative"
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -79,6 +99,28 @@ const ContentWrapper = styled.div`
   height: 650px;
   background-color: #191923;
   padding: 3rem;
+  border-radius: 2%;
+  overflow-y: auto;
+  box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+  &::-webkit-scrollbar {
+    width: 8px; /* Lebar scrollbar */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+    border-radius: 4px; /* Radius sudut */
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+  }
+}
+@media (max-width:320px) {
+  width: 317px;
+  height: 650px;
+  background-color: #191923;
+  padding: 1rem;
   border-radius: 2%;
   overflow-y: auto;
   box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
@@ -111,6 +153,15 @@ const TitleHeader = styled.div``;
 const Content = styled.div`
 @media (max-width:1920px) {
   padding: 2rem;
+  img{
+    width: 750px;
+  }
+}
+@media (max-width:320px) {
+  padding: 1rem;
+  img{
+    width: 255px;
+  }
 }
 `;
 
