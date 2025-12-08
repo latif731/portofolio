@@ -98,6 +98,24 @@ const Container = styled.div`
     // position:"relative"
   }
 
+  @media (max-width: 376px) {
+    position: fixed;
+    top: 0px;
+    left: -310px;
+    width: 675px;
+    height: 102px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    // gap:"2rem",
+    padding-left: 20rem;
+    padding-top: 2rem;
+    // justifyContent: "center",
+    // alignItems: "center",
+    // paddingTop: "3rem",
+    z-index: 999;
+    // position:"relative"
+  }
+
   @media (max-width: 360px) {
     position: fixed;
     top: 0px;
@@ -141,6 +159,28 @@ const ContentWrapper = styled.div`
     height: 650px;
     background-color: #191923;
     padding: 3rem;
+    border-radius: 2%;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
+  }
+  @media (max-width: 376px) {
+    width: 300rem;
+    height: 720px;
+    background-color: #191923;
+    padding: 1rem;
     border-radius: 2%;
     overflow-y: auto;
     box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
@@ -210,6 +250,12 @@ const Title = styled.div`
   @media (max-width: 1920px) {
     text-align: center;
   }
+  @media (max-width: 376px) {
+    text-align: center;
+    h2 {
+      font-size: 18.5px;
+    }
+  }
   @media (max-width: 360px) {
     text-align: center;
     h2 {
@@ -225,6 +271,13 @@ const Title = styled.div`
 `;
 
 const TitleHeader = styled.div`
+  @media (max-width: 376px) {
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 22.5px;
+    }
+  }
   @media (max-width: 360px) {
     h1 {
       color: white;
@@ -245,6 +298,9 @@ const Content = styled.div`
   @media (max-width: 1920px) {
     padding: 2rem;
   }
+  @media (max-width: 376px) {
+    padding: 2rem;
+  }
   @media (max-width: 360px) {
     padding: 2rem;
   }
@@ -255,6 +311,12 @@ const Content = styled.div`
 
 const MainContent = styled.div`
   @media (max-width: 1920px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+  @media (max-width: 376px) {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -275,6 +337,11 @@ const MainContent = styled.div`
 `;
 
 const Type = styled.div`
+@media (max-width:376px) {
+  h4 {
+    font-size: 12px;
+  }
+}
 @media (max-width:360px) {
   h4 {
     font-size: 11px;
@@ -289,6 +356,11 @@ const Type = styled.div`
 
 const Cross = styled.div`
   @media (max-width: 1920px) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 376px) {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2rem;
@@ -311,6 +383,14 @@ const ContentVideo = styled.div`
 `;
 
 const ChildContent = styled.div`
+  @media (max-width: 376px) {
+    h4 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 9.7px;
+    }
+  }
   @media (max-width: 360px) {
     h4 {
       font-size: 11px;
@@ -330,9 +410,13 @@ const ChildContent = styled.div`
 `;
 
 const ToolContainer = styled.div`
+  @media (max-width: 376px) {
+    width: 100%;
+    font-size: 12px;
+  }
   @media (max-width: 360px) {
     width: 100%;
-    font-size: 10px;
+    font-size: 11px;
   }
   @media (max-width: 320px) {
     width: 100%;
@@ -349,6 +433,16 @@ const ToolContent = styled.div`
     align-items: center;
     img {
       width: 100px;
+    }
+  }
+  @media (max-width: 376px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+    align-items: center;
+    img {
+      width: 50px;
     }
   }
   @media (max-width: 360px) {
@@ -376,6 +470,9 @@ const ToolContent = styled.div`
 const LinkContainer = styled.div``
 
 const LinkTitle = styled.div`
+  @media (max-width:376px) {
+    font-size: 12px;
+  }
   @media (max-width:360px) {
     font-size: 11px;
   }
@@ -385,6 +482,11 @@ const LinkTitle = styled.div`
 `
 
 const LinkContent = styled.div`
+  @media (max-width:376px) {
+    a{
+      font-size: 11px;
+    }
+  }
   @media (max-width:360px) {
     a{
       font-size: 10px;
