@@ -94,6 +94,40 @@ const Container = styled.div`
     margin: 0 auto;
     padding-bottom: 100px;
   }
+  @media (max-width: 395px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    gap: 2rem;
+    width: 90%;
+    /* max-width: 1280px; */
+    margin-left: 11px;
+    /* padding-bottom: 100px; */
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      /* margin-left: 2rem; */
+    }
+  }
+  @media (max-width: 391px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    gap: 2rem;
+    width: 90%;
+    /* max-width: 1280px; */
+    margin-left: 11px;
+    /* padding-bottom: 100px; */
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      /* margin-left: 2rem; */
+    }
+  }
   @media (max-width: 376px) {
     display: flex;
     flex-direction: column;
@@ -154,6 +188,12 @@ const TabContainer = styled.div`
     /* padding: 10px 40rem 10px 40rem;  */
     /* justify-content: space-around; */
   }
+  @media (max-width: 391px) {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 2rem;
+  }
   @media (max-width: 376px) {
     display: flex;
     justify-content: center;
@@ -176,6 +216,33 @@ const TabContainer = styled.div`
 
 const Web = styled.div`
   @media (max-width: 1920px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
+
+  @media (max-width: 391px) {
     cursor: pointer !important;
     position: relative; /* Add position relative */
     :before {
@@ -311,6 +378,32 @@ const Figma = styled.div`
           }
         `}
   }
+  @media (max-width: 391px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
   @media (max-width: 376px) {
     cursor: pointer !important;
     position: relative; /* Add position relative */
@@ -395,6 +488,9 @@ const Portfolio = styled.div`
   @media (max-width: 1902px) {
     width: 100%;
   }
+  @media (max-width: 391px) {
+    width: 100%;
+  }
   @media (max-width: 376px) {
     width: 100%;
   }
@@ -408,6 +504,9 @@ const Portfolio = styled.div`
 
 const Design = styled.div`
   @media (max-width: 1920px) {
+    width: 100%;
+  }
+  @media (max-width: 391px) {
     width: 100%;
   }
   @media (max-width: 376px) {
