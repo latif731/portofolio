@@ -82,6 +82,7 @@ const PersonalProject = () => {
 export default PersonalProject;
 
 const Container = styled.div`
+  /* WEB RESPONSIVE */
   @media (max-width: 1920px) {
     display: flex;
     flex-direction: column;
@@ -93,6 +94,64 @@ const Container = styled.div`
     max-width: 1280px;
     margin: 0 auto;
     padding-bottom: 100px;
+  }
+
+
+
+
+
+
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 428px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    gap: 2rem;
+    width: 90%;
+    /* max-width: 1280px; */
+    margin-left: 11px;
+    /* padding-bottom: 100px; */
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      /* margin-left: 2rem; */
+    }
+  }
+  @media (max-width: 415px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    gap: 2rem;
+    width: 90%;
+    /* max-width: 1280px; */
+    margin-left: 11px;
+    /* padding-bottom: 100px; */
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      /* margin-left: 2rem; */
+    }
+  }
+  @media (max-width: 412px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    gap: 2rem;
+    width: 90%;
+    /* max-width: 1280px; */
+    margin-left: 11px;
+    /* padding-bottom: 100px; */
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      /* margin-left: 2rem; */
+    }
   }
   @media (max-width: 395px) {
     display: flex;
@@ -180,6 +239,8 @@ const Container = styled.div`
 `;
 
 const TabContainer = styled.div`
+
+  /* WEB RESPONSIVE */
   @media (max-width: 1920px) {
     display: flex;
     justify-content: center;
@@ -187,6 +248,33 @@ const TabContainer = styled.div`
     padding-top: 2rem;
     /* padding: 10px 40rem 10px 40rem;  */
     /* justify-content: space-around; */
+  }
+
+
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 428px) {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 2rem;
+  }
+  @media (max-width: 415px) {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 2rem;
+  }
+  @media (max-width: 412px) {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 2rem;
+  }
+  @media (max-width: 395px) {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 2rem;
   }
   @media (max-width: 391px) {
     display: flex;
@@ -215,7 +303,117 @@ const TabContainer = styled.div`
 `;
 
 const Web = styled.div`
+  /* WEB RESPONSIVE */
   @media (max-width: 1920px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
+
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 428px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
+
+  @media (max-width: 415px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
+
+  @media (max-width: 412px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
+
+  @media (max-width: 395px) {
     cursor: pointer !important;
     position: relative; /* Add position relative */
     :before {
@@ -352,7 +550,115 @@ const Web = styled.div`
 `;
 
 const Figma = styled.div`
+
+/* WEB RESPONSIVE */
   @media (max-width: 1920px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
+
+/* MOBILE RESPONSIVE */
+  @media (max-width: 428px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
+  @media (max-width: 415px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
+  @media (max-width: 412px) {
+    cursor: pointer !important;
+    position: relative; /* Add position relative */
+    :before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px; /* Adjust bottom position */
+      height: 2px;
+      background-color: white;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    :hover:before {
+      transform: scaleX(1);
+    }
+    ${(props) =>
+      props.active &&
+      `
+          :before{
+          transform: scaleX(1);
+          }
+        `}
+  }
+  @media (max-width: 395px) {
     cursor: pointer !important;
     position: relative; /* Add position relative */
     :before {
@@ -485,7 +791,22 @@ const Figma = styled.div`
 `;
 
 const Portfolio = styled.div`
+/* WEB RESPONSIVE */
   @media (max-width: 1902px) {
+    width: 100%;
+  }
+
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 428px) {
+    width: 100%;
+  }
+  @media (max-width: 415px) {
+    width: 100%;
+  }
+  @media (max-width: 412px) {
+    width: 100%;
+  }
+  @media (max-width: 395px) {
     width: 100%;
   }
   @media (max-width: 391px) {
@@ -503,7 +824,22 @@ const Portfolio = styled.div`
 `;
 
 const Design = styled.div`
+/* WEB RESPONSIVE */
   @media (max-width: 1920px) {
+    width: 100%;
+  }
+
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 428px) {
+    width: 100%;
+  }
+  @media (max-width: 415px) {
+    width: 100%;
+  }
+  @media (max-width: 412px) {
+    width: 100%;
+  }
+  @media (max-width: 395px) {
     width: 100%;
   }
   @media (max-width: 391px) {

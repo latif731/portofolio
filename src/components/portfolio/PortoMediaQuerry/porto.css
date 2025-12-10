@@ -1,3 +1,31 @@
+@media (max-width: 428px) {
+  .slick-dots li button:before {
+    font-size: 10px !important;
+    color: white !important; /* ganti warna dot */
+    opacity: 0.75 !important;
+  }
+}
+@media (max-width: 415px) {
+  .slick-dots li button:before {
+    font-size: 10px !important;
+    color: white !important; /* ganti warna dot */
+    opacity: 0.75 !important;
+  }
+}
+@media (max-width: 412px) {
+  .slick-dots li button:before {
+    font-size: 10px !important;
+    color: white !important; /* ganti warna dot */
+    opacity: 0.75 !important;
+  }
+}
+@media (max-width: 395px) {
+  .slick-dots li button:before {
+    font-size: 10px !important;
+    color: white !important; /* ganti warna dot */
+    opacity: 0.75 !important;
+  }
+}
 @media (max-width: 391px) {
   .slick-dots li button:before {
     font-size: 10px !important;
@@ -28,6 +56,30 @@
 }
 
 /* Warna dot aktif */
+@media (max-width: 428px) {
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* warna dot aktif */
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 415px) {
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* warna dot aktif */
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 412px) {
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* warna dot aktif */
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 395px) {
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* warna dot aktif */
+    opacity: 1 !important;
+  }
+}
 @media (max-width: 391px) {
   .slick-dots li.slick-active button:before {
     color: red !important; /* warna dot aktif */

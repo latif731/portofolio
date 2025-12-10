@@ -2232,7 +2232,7 @@ const Banner = styled.div`
       url(${(props) => props.backgroundImage});
     background-size: cover;
     background-position: center;
-    height: 360px; /* Sesuaikan sesuai kebutuhan */
+    height: 380px; /* Sesuaikan sesuai kebutuhan */
     width: 100%; /* Sesuaikan sesuai kebutuhan */
     margin-top: 20px; /* Tambahkan margin jika diperlukan */
     /* padding: 1px; */
