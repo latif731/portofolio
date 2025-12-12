@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import { useInView } from 'react-intersection-observer';
-import { trainings } from '../../data/training';
-import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+import { useInView } from "react-intersection-observer";
+import { trainings } from "../../data/training";
+import { useTranslation } from "react-i18next";
 
 const Training = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const {t} = useTranslation()
-  const data = trainings()
+  const { t } = useTranslation();
+  const data = trainings();
 
   useEffect(() => {
     // console.log("Active index:", activeIndex);
@@ -46,46 +46,190 @@ const Training = () => {
 export default Training;
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  color: white;
-  padding-top: 6rem;
-  width: 80%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-bottom: 100px;
+  @media (max-width: 1920px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+  @media (max-width: 376px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    h1{
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 360px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    h1{
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 6rem;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    h1{
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+
 `;
 
 const ContentContainer = styled.div`
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  gap: 2rem;
-  position: relative;
-  /* z-index: 999; */
+  @media (max-width: 1920px) {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    /* z-index: 999; */
+  }
+  @media (max-width: 376px) {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    position: relative;
+    /* z-index: 999; */
+  }
+  @media (max-width: 360px) {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    position: relative;
+    /* z-index: 999; */
+  }
+  @media (max-width: 320px) {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    position: relative;
+    /* z-index: 999; */
+  }
 `;
 
 const Left = styled.div`
-  flex-basis: 50%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-sizing: border-box;
-  z-index: 10;
+  @media (max-width: 1920px) {
+    flex-basis: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  @media (max-width: 376px) {
+    flex-basis: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* z-index: 10; */
+  }
+  @media (max-width: 360px) {
+    flex-basis: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* z-index: 10; */
+  }
+  @media (max-width: 320px) {
+    flex-basis: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* z-index: 10; */
+  }
 `;
 
 const Right = styled.div`
-  position: sticky;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  flex-basis: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @media (max-width: 1920px) {
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 376px) {
+    position: sticky;
+    top: 79px;
+    right: 0;
+    height: 100vh;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  @media (max-width: 360px) {
+    position: sticky;
+    top: 79px;
+    right: 0;
+    height: 100vh;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  @media (max-width: 320px) {
+    position: sticky;
+    top: 79px;
+    right: 0;
+    height: 100vh;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
 `;
 
 const LeftItem = ({ title, description, index, setActiveIndex }) => {
@@ -108,30 +252,108 @@ const LeftItem = ({ title, description, index, setActiveIndex }) => {
 };
 
 const StyledLeftItem = styled.div`
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  padding: 0 60px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  opacity: ${(props) => (props.inView ? 1 : 0)};
-  transform: ${(props) => (props.inView ? 'none' : 'translateY(50px)')};
-  transition: opacity 0.6s, transform 0.6s;
+  @media (max-width: 1920px) {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: ${(props) => (props.inView ? 1 : 0)};
+    transform: ${(props) => (props.inView ? "none" : "translateY(50px)")};
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  @media (max-width: 376px) {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: ${(props) => (props.inView ? 1 : 0)};
+    transform: ${(props) => (props.inView ? "none" : "translateY(50px)")};
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  @media (max-width: 360px) {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: ${(props) => (props.inView ? 1 : 0)};
+    transform: ${(props) => (props.inView ? "none" : "translateY(50px)")};
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  @media (max-width: 320px) {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: ${(props) => (props.inView ? 1 : 0)};
+    transform: ${(props) => (props.inView ? "none" : "translateY(50px)")};
+    transition: opacity 0.6s, transform 0.6s;
+  }
 `;
 
 const Title = styled.div`
-  font-size: 100px;
-  font-family: Poppins, sans-serif;
-  font-weight: 600;
-  color: white;
+  @media (max-width: 1920px) {
+    font-size: 100px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+  @media (max-width: 376px) {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    /* font-weight: 100; */
+    color: white;
+  }
+  @media (max-width: 360px) {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    /* font-weight: 100; */
+    color: white;
+  }
+  @media (max-width: 320px) {
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    /* font-weight: 100; */
+    color: white;
+  }
 `;
 
 const Description = styled.div`
-  font-size: 18px;
-  font-family: Poppins, sans-serif;
-  font-weight: 300;
-  color: white;
+  @media (max-width: 1920px) {
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: white;
+  }
+  @media (max-width: 376px) {
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: white;
+  }
+  @media (max-width: 360px) {
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: white;
+  }
+  @media (max-width: 320px) {
+    font-size: 10px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: white;
+  }
 `;
 
 const ImageItem = ({ img, index, activeIndex }) => {
@@ -148,16 +370,60 @@ const ImageItem = ({ img, index, activeIndex }) => {
 };
 
 const ImageContainer = styled.div`
-  width: 100%;
-  height: auto;
-  display: ${(props) => (props.active ? 'block' : 'none')};
-  align-items: center;
-  justify-content: center;
-  img {
+  @media (max-width: 1920px) {
     width: 100%;
     height: auto;
-    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
-    transform: ${(props) => (props.inView ? 'scale(1.1)' : 'scale(0.8)')};
-    opacity: ${(props) => (props.inView ? 1 : 0)};
+    display: ${(props) => (props.active ? "block" : "none")};
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      transform: ${(props) => (props.inView ? "scale(1.1)" : "scale(0.8)")};
+      opacity: ${(props) => (props.inView ? 1 : 0)};
+    }
+  }
+  @media (max-width: 376px) {
+    width: 100%;
+    height: auto;
+    display: ${(props) => (props.active ? "block" : "none")};
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      transform: ${(props) => (props.inView ? "scale(1.1)" : "scale(0.8)")};
+      opacity: ${(props) => (props.inView ? 1 : 0)};
+    }
+  }
+  @media (max-width: 360px) {
+    width: 100%;
+    height: auto;
+    display: ${(props) => (props.active ? "block" : "none")};
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      transform: ${(props) => (props.inView ? "scale(1.1)" : "scale(0.8)")};
+      opacity: ${(props) => (props.inView ? 1 : 0)};
+    }
+  }
+  @media (max-width: 320px) {
+    width: 100%;
+    height: auto;
+    display: ${(props) => (props.active ? "block" : "none")};
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      transform: ${(props) => (props.inView ? "scale(1.1)" : "scale(0.8)")};
+      opacity: ${(props) => (props.inView ? 1 : 0)};
+    }
   }
 `;
