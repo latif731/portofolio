@@ -84,6 +84,10 @@ const Container = styled.div`
     color: white;
   }
 
+  @media (max-width:768px) {
+    text-align: center;
+  }
+
   @media (max-width: 428px) {
     display: flex;
     flex-direction: column;

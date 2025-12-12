@@ -166,6 +166,7 @@ const Container = styled.div`
     margin: 0 auto;
     z-index: 0;
     color: white;
+    /* text-align: center; */
   }
 
 
@@ -1092,14 +1093,13 @@ const Content = styled.div`
     }
   }
   /* TABLET RESPONSIVE */
-
-  
   @media (min-width: 1114px) and (max-width: 1152px) {
     position: absolute;
     top: 5%;
     width: 1140px;
     /* max-width: 80%; */
     left: 67%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1143,6 +1143,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 87%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1185,6 +1186,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 90%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1227,6 +1229,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 95%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1273,6 +1276,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 150%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1318,6 +1322,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 150%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1363,6 +1368,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 160%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1407,6 +1413,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 160%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1451,6 +1458,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 165%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1495,6 +1503,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 175%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -1539,6 +1548,7 @@ const Content = styled.div`
     width: 1140px;
     /* max-width: 80%; */
     left: 194%;
+    text-align: start;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import FigmaWeb from "./FigmaMediaQuerry/FigmaWeb";
 import FigmaMobile from "./FigmaMediaQuerry/FigmaMobile";
+import FigmaTablet from "./FigmaMediaQuerry/FigmaTablet";
 
 const CardFigma = ({ setOpenFigmaDetail }) => {
   return (
@@ -15,7 +16,7 @@ const CardFigma = ({ setOpenFigmaDetail }) => {
       </MobileFigma>
 
       <TabletFigma>
-
+        <FigmaTablet setOpenFigmaDetail={setOpenFigmaDetail}/>
       </TabletFigma>
     </>
   );

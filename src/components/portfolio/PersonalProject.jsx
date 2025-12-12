@@ -86,7 +86,7 @@ const Container = styled.div`
   @media (max-width: 1920px) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     color: white;
     padding-top: 6rem;
     gap: 2rem;
@@ -96,16 +96,77 @@ const Container = styled.div`
     padding-bottom: 100px;
   }
 
-
-
-
-
+  /* TABLET RESPONSIVE */
+  @media (max-width: 1024px) and (min-width: 834px) {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    color: white;
+    padding-top: 6rem;  
+    gap: 2rem;
+    width: 90%;
+    max-width: 1280rem;
+    /* margin: 0 20px; */
+    padding-bottom: 100px;
+    /* text-align: center; */
+    h1{
+      text-align: center;
+    }
+  }
+  @media (max-width: 820px) {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    color: white;
+    padding-top: 6rem;  
+    gap: 2rem;
+    width: 90%;
+    max-width: 1280rem;
+    /* margin: 0 20px; */
+    padding-bottom: 100px;
+    /* text-align: center; */
+    h1{
+      text-align: center;
+    }
+  }
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    color: white;
+    padding-top: 6rem;  
+    gap: 2rem;
+    width: 90%;
+    max-width: 1280rem;
+    /* margin: 0 20px; */
+    padding-bottom: 100px;
+    /* text-align: center; */
+    h1{
+      text-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    color: white;
+    padding-top: 6rem;  
+    gap: 2rem;
+    width: 90%;
+    max-width: 1280rem;
+    /* margin: 0 20px; */
+    padding-bottom: 100px;
+    /* text-align: center; */
+    h1{
+      text-align: center;
+    }
+  }
 
   /* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     color: white;
     padding-top: 6rem;
     gap: 2rem;
@@ -122,7 +183,7 @@ const Container = styled.div`
   @media (max-width: 415px) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     color: white;
     padding-top: 6rem;
     gap: 2rem;
@@ -139,7 +200,7 @@ const Container = styled.div`
   @media (max-width: 412px) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     color: white;
     padding-top: 6rem;
     gap: 2rem;
@@ -156,7 +217,7 @@ const Container = styled.div`
   @media (max-width: 395px) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     color: white;
     padding-top: 6rem;
     gap: 2rem;
@@ -173,7 +234,7 @@ const Container = styled.div`
   @media (max-width: 391px) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     color: white;
     padding-top: 6rem;
     gap: 2rem;
@@ -190,7 +251,7 @@ const Container = styled.div`
   @media (max-width: 376px) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     color: white;
     padding-top: 6rem;
     gap: 2rem;
@@ -207,7 +268,7 @@ const Container = styled.div`
   @media (max-width: 360px) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     color: white;
     padding-top: 6rem;
     gap: 2rem;
@@ -223,7 +284,7 @@ const Container = styled.div`
   @media (max-width: 320px) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     color: white;
     padding-top: 6rem;
     gap: 2rem;
@@ -246,6 +307,44 @@ const TabContainer = styled.div`
     justify-content: center;
     gap: 10rem;
     padding-top: 2rem;
+    /* padding: 10px 40rem 10px 40rem;  */
+    /* justify-content: space-around; */
+  }
+
+  /* TABLET RESPONSIVE */
+  @media (max-width: 1024px) and (min-width: 834px) {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 2rem;
+    /* margin-left: 80px; */
+    /* padding: 10px 40rem 10px 40rem;  */
+    /* justify-content: space-around; */
+  }
+  @media (max-width: 820px) {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 2rem;
+    /* margin-left: 80px; */
+    /* padding: 10px 40rem 10px 40rem;  */
+    /* justify-content: space-around; */
+  }
+  @media (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 2rem;
+    /* margin-left: 80px; */
+    /* padding: 10px 40rem 10px 40rem;  */
+    /* justify-content: space-around; */
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 2rem;
+    /* margin-left: 80px; */
     /* padding: 10px 40rem 10px 40rem;  */
     /* justify-content: space-around; */
   }

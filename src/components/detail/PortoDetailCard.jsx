@@ -80,6 +80,7 @@ const PortoDetailCard = ({ setOpenPortoDetail, selectedPortoDetail }) => {
 export default PortoDetailCard;
 
 const Container = styled.div`
+/* WEB RESPONSIVE */
   @media (max-width: 1920px) {
     position: fixed;
     top: 0;
@@ -98,6 +99,94 @@ const Container = styled.div`
     // position:"relative"
   }
 
+/* TABLET RESPONSIVE */
+@media (max-width: 1115px) and (min-width: 1025px){
+  position: fixed;
+  top: -20px;
+  left: -310px;
+  width: 88.5rem;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  // gap:"2rem",
+  padding-left: 20rem;
+  padding-top: 2rem;
+  // justifyContent: "center",
+  // alignItems: "center",
+  // paddingTop: "3rem",
+  z-index: 999;
+  // position:"relative"
+}
+@media (max-width: 1024px) and (min-width: 834px) {
+  position: fixed;
+  top: 0px;
+  left: -310px;
+  width: 70.9rem;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  // gap:"2rem",
+  padding-left: 20rem;
+  padding-top: 2rem;
+  // justifyContent: "center",
+  // alignItems: "center",
+  // paddingTop: "3rem",
+  z-index: 999;
+  // position:"relative"
+}
+@media (max-width: 820px) {
+  position: fixed;
+  top: 0px;
+  left: -310px;
+  width: 70.1rem;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  // gap:"2rem",
+  padding-left: 20rem;
+  padding-top: 2rem;
+  // justifyContent: "center",
+  // alignItems: "center",
+  // paddingTop: "3rem",
+  z-index: 999;
+  // position:"relative"
+}
+@media (max-width: 800px) {
+  position: fixed;
+  top: 0px;
+  left: -310px;
+  width: 68rem;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  // gap:"2rem",
+  padding-left: 20rem;
+  padding-top: 2rem;
+  // justifyContent: "center",
+  // alignItems: "center",
+  // paddingTop: "3rem",
+  z-index: 999;
+  // position:"relative"
+}
+@media (max-width: 768px) {
+  position: fixed;
+  top: 0px;
+  left: -310px;
+  width: 68rem;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  // gap:"2rem",
+  padding-left: 20rem;
+  padding-top: 2rem;
+  // justifyContent: "center",
+  // alignItems: "center",
+  // paddingTop: "3rem",
+  z-index: 999;
+  // position:"relative"
+}
+
+  /* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     position: fixed;
     top: 0px;
@@ -243,6 +332,7 @@ const Container = styled.div`
 `;
 
 const ContentWrapper = styled.div`
+/* WEB RESPONSIVE */
   @media (max-width: 1920px) {
     width: 900px;
     height: 650px;
@@ -265,6 +355,142 @@ const ContentWrapper = styled.div`
       background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
     }
   }
+/* TABLET RESPONSIVE */
+  @media (max-width: 1115px) and (min-width: 1025px) {
+    width: 500rem;
+    height: 42rem;
+    background-color: #191923;
+    padding: 1rem;
+    border-radius: 2%;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
+  }
+  @media (max-width: 1024px) and (min-width: 834px) {
+    width: 300rem;
+    height: 68rem;
+    background-color: #191923;
+    padding: 1rem;
+    border-radius: 2%;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
+  }
+  @media (max-width: 820px) {
+    width: 300rem;
+    height: 68rem;
+    background-color: #191923;
+    padding: 1rem;
+    border-radius: 2%;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
+  }
+  @media (max-width: 800px) {
+    width: 300rem;
+    height: 75rem;
+    background-color: #191923;
+    padding: 1rem;
+    border-radius: 2%;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
+  }
+  @media (max-width: 768px) {
+    width: 300rem;
+    height: 920px;
+    background-color: #191923;
+    padding: 1rem;
+    border-radius: 2%;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+    &::-webkit-scrollbar {
+      width: 8px; /* Lebar scrollbar */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+      border-radius: 4px; /* Radius sudut */
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+    }
+  }
+/* TABLET REPONSIVE */
+@media (max-width: 428px) {
+  width: 300rem;
+  height: 810px;
+  background-color: #191923;
+  padding: 1rem;
+  border-radius: 2%;
+  overflow-y: auto;
+  box-shadow: 5px 5px 15px rgba(255, 251, 251, 0.5);
+  &::-webkit-scrollbar {
+    width: 8px; /* Lebar scrollbar */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2); /* Warna thumb scrollbar */
+    border-radius: 4px; /* Radius sudut */
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Warna thumb saat dihover */
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Warna track scrollbar */
+  }
+}
+
+/* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     width: 300rem;
     height: 810px;
@@ -446,9 +672,12 @@ const ContentWrapper = styled.div`
 const ContentDetail = styled.div``;
 
 const Title = styled.div`
+/* WEB RESPONSIVE */
   @media (max-width: 1920px) {
     text-align: center;
   }
+
+/* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     text-align: center;
     h2 {
@@ -500,6 +729,34 @@ const Title = styled.div`
 `;
 
 const TitleHeader = styled.div`
+ /* TABLET RESPONSIVE */
+ @media (max-width: 1115px) and (min-width: 1025px) {
+  h1{
+    text-align: center;
+  }
+ }
+ @media (max-width: 1024px) and (min-width: 834px) {
+  h1{
+    text-align: center;
+  }
+ }
+ @media (max-width:820px) {
+  h1{
+    text-align: center;
+  }
+ }
+ @media (max-width:800px) {
+  h1{
+    text-align: center;
+  }
+ }
+ @media (max-width:768px) {
+  h1{
+    text-align: center;
+  }
+ }
+
+/* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     h1 {
       color: white;
@@ -559,9 +816,12 @@ const TitleHeader = styled.div`
 `;
 
 const Content = styled.div`
+/* WEB RESPONSIVE */
   @media (max-width: 1920px) {
     padding: 2rem;
   }
+
+/* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     padding: 2rem;
   }
@@ -589,12 +849,15 @@ const Content = styled.div`
 `;
 
 const MainContent = styled.div`
+/* WEB RESPONSIVE */
   @media (max-width: 1920px) {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding-top: 2rem;
   }
+
+/* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     display: flex;
     flex-direction: column;
@@ -646,6 +909,7 @@ const MainContent = styled.div`
 `;
 
 const Type = styled.div`
+/* MOBILE RESPONSIVE */
 @media (max-width:428px) {
   h4 {
     font-size: 12px;
@@ -689,11 +953,14 @@ const Type = styled.div`
 `;
 
 const Cross = styled.div`
+/* WEB RESPONSIVE */
   @media (max-width: 1920px) {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2rem;
   }
+
+/* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     display: flex;
     justify-content: flex-end;
@@ -742,6 +1009,7 @@ const ContentVideo = styled.div`
 `;
 
 const ChildContent = styled.div`
+/* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     h4 {
       font-size: 13px;
@@ -809,6 +1077,7 @@ const ChildContent = styled.div`
 `;
 
 const ToolContainer = styled.div`
+/* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     width: 100%;
     font-size: 12px;
@@ -844,6 +1113,7 @@ const ToolContainer = styled.div`
 `;
 
 const ToolContent = styled.div`
+/* WEB RESPONSIVE */
   @media (max-width: 1920px) {
     display: flex;
     flex-wrap: wrap;
@@ -854,6 +1124,8 @@ const ToolContent = styled.div`
       width: 100px;
     }
   }
+
+/* MOBILE RESPONSIVE */
   @media (max-width: 428px) {
     display: flex;
     flex-wrap: wrap;
@@ -939,6 +1211,7 @@ const ToolContent = styled.div`
 const LinkContainer = styled.div``
 
 const LinkTitle = styled.div`
+/* MOBILE RESPONSIVE */
   @media (max-width:428px) {
     font-size: 12px;
   }
@@ -966,6 +1239,7 @@ const LinkTitle = styled.div`
 `
 
 const LinkContent = styled.div`
+/* MOBILE RESPONSIVE */
   @media (max-width:428px) {
     a{
       font-size: 11px;

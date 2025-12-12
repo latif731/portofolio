@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import PortoWeb from "./PortoMediaQuerry/PortoWeb";
 import PortoMobile from "./PortoMediaQuerry/PortoMobile";
+import PortoTablet from "./PortoMediaQuerry/PortoTablet";
 
 const CardPorto = ({ setOpenPortoDetail }) => {
   return (
@@ -13,7 +14,9 @@ const CardPorto = ({ setOpenPortoDetail }) => {
       <MobilePorto>
         <PortoMobile setOpenPortoDetail={setOpenPortoDetail} />
       </MobilePorto>
-      <TabletPorto></TabletPorto>
+      <TabletPorto>
+        <PortoTablet setOpenPortoDetail={setOpenPortoDetail} />
+      </TabletPorto>
     </>
   );
 };
