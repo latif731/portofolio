@@ -261,12 +261,21 @@ const Title = styled.div`
   /* TABLET RESPONSIVE */
   @media (max-width: 835px) {
     padding-bottom: 5rem;
+    h1{
+      text-align: center;
+    }
   }
   @media (max-width: 820px) {
     padding-bottom: 5rem;
+    h1{
+      text-align: center;
+    }
   }
   @media (max-width: 768px) {
     padding-bottom: 5rem;
+    h1{
+      text-align: center;
+    }
   }
 
   /* MOBILE RESPONSIVE */

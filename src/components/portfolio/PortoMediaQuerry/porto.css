@@ -1,4 +1,32 @@
 /* TABLET RESPONSIVE */
+@media (max-width: 1114px) {
+  .slick-dots li button:before {
+    font-size: 10px !important;
+    color: white !important; /* ganti warna dot */
+    opacity: 0.75 !important;
+  }
+}
+@media (max-width: 834px) {
+  .slick-dots li button:before {
+    font-size: 10px !important;
+    color: white !important; /* ganti warna dot */
+    opacity: 0.75 !important;
+  }
+}
+@media (max-width: 820px) {
+  .slick-dots li button:before {
+    font-size: 10px !important;
+    color: white !important; /* ganti warna dot */
+    opacity: 0.75 !important;
+  }
+}
+@media (max-width: 800px) {
+  .slick-dots li button:before {
+    font-size: 10px !important;
+    color: white !important; /* ganti warna dot */
+    opacity: 0.75 !important;
+  }
+}
 @media (max-width: 768px) {
   .slick-dots li button:before {
     font-size: 10px !important;
@@ -67,6 +95,30 @@
 
 
 /* TABLET RESPONSIVE */
+@media (max-width: 1114px) {
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* warna dot aktif */
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 834px) {
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* warna dot aktif */
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 820px) {
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* warna dot aktif */
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 800px) {
+  .slick-dots li.slick-active button:before {
+    color: red !important; /* warna dot aktif */
+    opacity: 1 !important;
+  }
+}
 @media (max-width: 768px) {
   .slick-dots li.slick-active button:before {
     color: red !important; /* warna dot aktif */
