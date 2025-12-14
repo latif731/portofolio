@@ -33,6 +33,7 @@ const Container = styled.section`
 const Title = styled.h1`
   margin-bottom: 3rem;
   color: white;
+  font-size:25px;
 `;
 
 const Scroller = styled.div`
