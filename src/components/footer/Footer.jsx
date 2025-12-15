@@ -25,6 +25,27 @@ const Web = styled.div`
 @media (max-width:1920px) {
   display: block;
 }
+@media (max-width:428px) {
+  display: none;
+}
+@media (max-width:415px) {
+  display: none;
+}
+@media (max-width:412px) {
+  display: none;
+}
+@media (max-width:395px) {
+  display: none;
+}
+@media (max-width:391px) {
+  display: none;
+}
+@media (max-width:376px) {
+  display: none;
+}
+@media (max-width:360px) {
+  display: none;
+}
 @media (max-width:320px) {
   display: none;
 }
