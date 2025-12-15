@@ -296,7 +296,7 @@ const Container = styled.div`
 
   @media (max-width: 360px) {
     position: fixed;
-    top: 0px;
+    top: -10px;
     left: -310px;
     width: 658px;
     height: 102px;
@@ -625,7 +625,7 @@ const ContentWrapper = styled.div`
   }
   @media (max-width: 360px) {
     width: 300rem;
-    height: 750px;
+    height: 700px;
     background-color: #191923;
     padding: 1rem;
     border-radius: 2%;
