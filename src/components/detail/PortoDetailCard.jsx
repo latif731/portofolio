@@ -625,7 +625,7 @@ const ContentWrapper = styled.div`
   }
   @media (max-width: 360px) {
     width: 300rem;
-    height: 650px;
+    height: 700px;
     background-color: #191923;
     padding: 1rem;
     border-radius: 2%;
