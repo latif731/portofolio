@@ -6,6 +6,8 @@ import bnsp from "../../src/assets/images/bnsp.png"
 import ef from "../../src/assets/images/ef.png"
 // import foo from "../../src/images/foosertifikat.jpg"
 import foo from "../../src/assets/images/foosertifikat.jpg"
+import toeic from "../../src/assets/images/TOEIC.jpg"
+import topik from "../../src/assets/images/EPSTOPIK.jpg"
 
 export const sertifikatData = [
     {
@@ -26,6 +28,16 @@ export const sertifikatData = [
     {
         id:"4",
         img:`${foo}`
+        // img:"/images/foosertifikat.jpg"
+    },
+    {
+        id:"5",
+        img:`${toeic}`
+        // img:"/images/foosertifikat.jpg"
+    },
+    {
+        id:"6",
+        img:`${topik}`
         // img:"/images/foosertifikat.jpg"
     },
 ]
