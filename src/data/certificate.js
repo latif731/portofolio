@@ -35,9 +35,9 @@ export const sertifikatData = [
         img:`${toeic}`
         // img:"/images/foosertifikat.jpg"
     },
-    {
-        id:"6",
-        img:`${topik}`
-        // img:"/images/foosertifikat.jpg"
-    },
+    // {
+    //     id:"6",
+    //     img:`${topik}`
+    //     // img:"/images/foosertifikat.jpg"
+    // },
 ]
