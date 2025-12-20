@@ -8,6 +8,7 @@ import ProfileCaraousel from "../carousel/ProfileCaraousel";
 import i18 from "../../i18n";
 import { useTranslation } from "react-i18next";
 
+
 const Profile = () => {
   const { t, i18n } = useTranslation();
 

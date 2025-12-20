@@ -58,6 +58,30 @@ const ProfileCaraousel = ({ t, i18n }) => {
             {t("profile.it")}
           </p>
         </div>
+        <div>
+          <p
+            style={{
+              whiteSpace: "pre-wrap",
+            }}
+          >
+            {/* Saya memiliki keterampilan dalam membangun aplikasi berupa website<br/>
+             berdasarkan design UI/UX,
+            dengan pengalaman mengikuti Bootcamp coding, 
+            membuat saya mengetahui bagaimana proses 
+            membuat website yang sesuai
+            dengan design UI/UX,  
+            saya adalah pribadi yang suka belajar hal baru,
+            pekerja keras,
+            mampu bekerja dengan tim maupun individu, mengasah keterampilan
+            bagi saya
+            adalah suatu hal yang penting agar dapat berguna bagi diri saya dan 
+            orang lain
+            termasuk perusahaan. dengan menunjukkan hasil portofolio saya,
+            saya yakin dapat memberikan kontribusi untuk perusahaan dan client. */}
+
+            {t("profile.welder")}
+          </p>
+        </div>
       </Slider>
     </SliderContainer>
   );
