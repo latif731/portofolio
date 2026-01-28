@@ -30,11 +30,11 @@ export const sertifikatData = [
         img:`${foo}`
         // img:"/images/foosertifikat.jpg"
     },
-    {
-        id:"5",
-        img:`${toeic}`
-        // img:"/images/foosertifikat.jpg"
-    },
+    // {
+    //     id:"5",
+    //     img:`${toeic}`
+    //     // img:"/images/foosertifikat.jpg"
+    // },
     // {
     //     id:"6",
     //     img:`${topik}`
